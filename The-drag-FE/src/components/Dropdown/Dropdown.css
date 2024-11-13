@@ -1,0 +1,79 @@
+@media screen and (min-width:600px)
+{
+  .dropdown{
+   
+    z-index: 20;
+    width:max-content;
+   overflow-y: scroll;
+
+    background-color: rgb(255, 255, 255);
+         position:absolute;
+         left:20%;
+   
+    height:300px;
+    box-shadow: 1px 2px 10px rgb(109, 108, 108);
+    padding:4px 0;
+    
+   
+}
+.dropdown>ul{
+list-style: none;
+}
+.dropdown>ul>li{
+   
+   
+padding:5px 5px;
+font-size: 15px;
+color:rgba(64, 1, 1, 1);
+font-weight: 400;
+padding-left: 10px;
+line-height: 110%;
+border-bottom: 1px solid rgba(64, 1, 1, 1);
+}
+
+.dropdown>ul>li:hover{
+
+  color:rgba(255, 238, 203, 1) ;
+  cursor:pointer;
+  background-color:rgba(64, 1, 1, 1);
+  
+}
+}
+
+@media screen and (max-width:600px){
+  .dropdown{
+   
+    z-index: 20;
+    width:max-content;
+   overflow-y: scroll;
+   position:absolute;
+    background-color: rgb(255, 255, 255);
+    top:110%;
+    left:0%;
+    height:300px;
+    box-shadow: 1px 2px 10px rgb(109, 108, 108);
+    padding:4px 0;
+    
+}
+.dropdown>ul{
+list-style: none;
+}
+.dropdown>ul>li{
+   
+   
+padding:5px 5px;
+font-size: 12px;
+line-height:110%;
+color:rgba(64, 1, 1, 1);
+font-weight: 400;
+padding-left: 10px;
+border-bottom: 1px solid rgba(64, 1, 1, 1);
+}
+.dropdown>ul>li:hover{
+
+  color:rgba(255, 238, 203, 1) ;
+  cursor:pointer;
+  background-color:rgba(64, 1, 1, 1);
+  
+}
+}

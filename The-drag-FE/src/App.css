@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+Routes {
+    flex: 1; 
+}
+.popup-overlay{
+    position:sticky;
+    top:5px;
+}
+.loading{
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    z-index: 1000;
+}
+
+.background {
+  filter: blur(5px);
+}

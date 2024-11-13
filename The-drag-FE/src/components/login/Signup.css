@@ -1,0 +1,282 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.auth-wrapper * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.eye {
+  position: absolute;
+  right: 0.75rem;
+  top: 20px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.password {
+  position: relative;
+}
+
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0faff;
+  position: relative;
+  width: 500px;
+  border-radius: 12px;
+  padding: 20px 30px 120px;
+  background:rgba(28, 24, 38, 1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+
+.auth-form header {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-wrapper.auth-active .auth-signup header {
+  opacity: 0.6;
+}
+
+.auth-wrapper.auth-active .auth-login header {
+  opacity: 1;
+}
+
+.auth-signup header {
+  color: #fff;
+}
+
+.auth-login header {
+  color: #333;
+  opacity: 0.6;
+}
+
+.auth-wrapper.auth-active .auth-form.auth-login {
+  bottom: -15%;
+  border-radius: 35%;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.auth-form.auth-login {
+  position: absolute;
+  left: 50%;
+  bottom: -86%;
+  transform: translateX(-50%);
+  width: calc(100% + 220px);
+  padding: 20px 140px;
+  border-radius: 50%;
+  height: 100%;
+  background: #fff;
+  transition: all 0.6s ease;
+}
+
+.auth-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+  width: 80%;
+}
+
+.auth-wrapper input {
+  height: 60px;
+  outline: none;
+  border: none;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 8px;
+  background: #fff;
+  width: 100%;
+  border: 1px solid rgb(44, 44, 44);
+}
+
+.auth-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.auth-checkbox input[type="checkbox"] {
+  height: 16px;
+  width: 16px;
+  accent-color: #fff;
+  cursor: pointer;
+}
+
+.auth-checkbox label {
+  cursor: pointer;
+  color: #fff;
+}
+
+.auth-wrapper form a {
+  color: #333;
+  text-decoration: none;
+}
+
+.auth-wrapper form a:hover {
+  text-decoration: underline;
+}
+
+.auth-wrapper input[type="submit"] {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.auth-form.auth-login input[type="submit"] {
+  background: rgba(28, 24, 38, 1);
+  color: #fff;
+  border: none;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .auth-wrapper {
+    width: 90%;
+   
+    box-shadow: none;
+    border-radius: 10px;
+  }
+
+  .auth-form header {
+    font-size: 24px;
+  }
+
+  .auth-wrapper input {
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .auth-wrapper input[type="submit"] {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+
+  .auth-form.auth-login {
+    width: calc(100% + 120px);
+    padding: 20px 60px;
+  }
+
+  .eye {
+    right: 0.5rem;
+    top: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+    .auth-form{
+        width: 100%;
+    }
+  .auth-wrapper {
+    width: 100%;
+    
+  }
+
+  .auth-form header {
+    font-size: 20px;
+  }
+
+  .auth-wrapper input {
+    height: 45px;
+    font-size: 12px;
+  }
+
+  .auth-wrapper input[type="submit"] {
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+
+  .auth-form.auth-login {
+    width: calc(100% + 80px);
+    /* padding: 20px 40px; */
+  }
+
+  .eye {
+    right: 0.25rem;
+    top: 10px;
+  }
+}
+
+
+/* Mobile Styles */
+/* @media (max-width: 768px) {
+  .auth-wrapper {
+    max-width: 100%;
+    padding: 20px 15px 100px;
+  }
+
+  .auth-form header {
+    font-size: 24px;
+  }
+
+  .auth-wrapper input {
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .auth-form.auth-login {
+    width: calc(100% + 150px);
+    padding: 20px 100px;
+  }
+
+  .auth-checkbox label {
+    font-size: 14px;
+  }
+
+  .auth-wrapper input[type="submit"] {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-wrapper {
+    padding: 20px 10px 80px;
+  }
+
+  .auth-form header {
+    font-size: 20px;
+  }
+
+  .auth-wrapper input {
+    height: 45px;
+    font-size: 13px;
+  }
+
+  .auth-form.auth-login {
+    width: calc(100% + 100px);
+    padding: 20px 80px;
+  }
+
+  .auth-checkbox label {
+    font-size: 12px;
+  }
+
+  .auth-wrapper input[type="submit"] {
+    font-size: 14px;
+  }
+  .eye{
+    top:10px
+  }
+} */

@@ -1,0 +1,380 @@
+
+*{
+    font-family: 'poppins';
+}
+.CreateDeal-container{
+    color: rgba(64, 1, 1, 1);
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 10px;
+    position: relative;
+    overflow-y: auto;
+    border-radius: 15px;
+    scrollbar-width:none;
+    scroll-behavior: smooth;
+    height: 700px;
+    h3 {
+      font-family: 'Poppins';
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 46.24px;
+      text-align: left;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    form div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        gap: 20px;
+        margin-top: 5px;
+    }
+    
+
+    .dealType-options{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .dealType-options div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .username1 input{
+        width: 100%;
+    }
+    .description textarea{
+        width: 100%;
+        height:100px ;
+    }
+    .creatorType-input input{
+        width: 100%;
+    }
+    .followers input{
+        width: 100%;
+    }
+    .contact{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+    .contact div input{
+        width: 100%;
+        
+    }
+    form button {
+        
+        width: 30%;
+        margin: auto;
+        margin-top: 10px;
+         border: 2px solid rgba(64, 1, 1, 1);
+        color: rgba(64, 1, 1, 1);
+        font-family: Jost;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        background: transparent;
+        align-self: flex-end;
+        margin-bottom: 10px;
+        padding: 2px 8px;
+        cursor: pointer;
+        
+    }
+
+}
+.close1{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    background-color: #fafafa;
+    cursor: pointer;
+    font-size: xx-large;
+}
+@media (max-width:500px){
+    .CreateDeal-container{
+        width: 300px;
+        overflow-y: auto;
+        height: 500px;
+        .contact{
+        flex-direction: column;
+        .dealType-options{
+            flex-direction: column;
+        }
+    }
+    }
+    
+     #CreateDeal-btn{
+           width:50% 
+        }
+    
+}
+/* @media screen and (min-width: 700px) {
+  .CreateDeal-container {
+    
+
+    h3 {
+      font-family: 'Poppins';
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 46.24px;
+      text-align: left;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 3vh;
+
+      .dealType {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+
+        .dealType-options {
+          display: flex;
+          gap: 40px;
+
+          div {
+            display: flex;
+            gap: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        .Mobile {
+          gap: 55px;
+        }
+
+        div {
+          display: flex;
+          gap: 40px;
+          align-items: center;
+
+          div {
+            display: flex;
+            flex-direction: column;
+
+            input {
+              margin-left: 15px;
+              outline: none;
+              border: 2px solid #400101;
+              color: #400101;
+              font-family: Jost;
+              background-color: #ffeecb;
+              padding: 2px 4px;
+              font-size: 15px;
+              font-weight: 500;
+              line-height: 21.68px;
+              text-align: left;
+            }
+
+            label {
+              font-family: 'Jost';
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 34.68px;
+              gap: 6px;
+            }
+          }
+
+          label,
+          input {
+            font-family: 'Jost';
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 34.68px;
+            text-align: left;
+            border: 2px solid #400101;
+            background-color: #ffeecb;
+            padding-left: 4px;
+          }
+
+          input {
+            width: 45%;
+            outline: none;
+            color: #400101;
+            font-size: 15px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      button {
+        width: 117px;
+        height: 50px;
+        border: 2px solid rgba(64, 1, 1, 1);
+        color: rgba(64, 1, 1, 1);
+        font-family: Jost;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        background: transparent;
+        align-self: flex-end;
+        margin-bottom: 10px;
+        padding: 2px 8px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba(64, 1, 1, 1);
+          color: #ffeecb;
+        }
+      }
+    }
+
+    img {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+    }
+  }
+
+  .username1,
+  .description,
+  .followers,
+  .contact,
+  .mobile,
+  .socialMedia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .username1 {
+    align-items: center;
+    gap: 20px;
+
+    label {
+      width: 30%;
+    }
+
+    input {
+      padding-left: 4px;
+      width: 100%;
+      height: 40px;
+      font-size: 18px;
+    }
+  }
+
+  .description textarea {
+    padding-top: 5px;
+    font-size: 15px;
+    font-family: 'Arial';
+    min-height: 150px;
+    max-height: 200px;
+  }
+
+  .followers input,
+  .contact input {
+    width: 50%;
+    height: 3.5vh;
+  }
+
+  .mobile input,
+  .socialMedia input {
+    width: 60%;
+  }
+} */
+
+/* @media screen and (min-width: 350px) and (max-width: 700px) {
+  .CreateDeal-container {
+    width: 80vw;
+    height: 95vh;
+    padding-left: 7vw;
+  }
+
+  .CreateDeal-container form {
+    gap: 10px;
+
+    .contacts .mobileNo {
+      font-size: 2vh;
+    }
+
+    button {
+      width: 100px;
+      height: 5vh;
+      font-size: 20px;
+      position: absolute;
+      bottom: 10px;
+      right: 40px;
+    }
+
+    .contacts div {
+      gap: 0.1vh;
+    }
+  }
+
+  .Type,
+  .username1,
+  #profileImage,
+  #phone,
+  .Location {
+    font-size: 2vh;
+  }
+
+  .Type select,
+  .username1 input,
+  .Location input {
+    height: 3vh;
+  }
+
+  .username1 {
+    gap: 5px;
+
+    label {
+      font-size: 2vh;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .CreateDeal-container {
+    width: 90vw;
+    height: 83vh;
+    padding-left: 3vw;
+
+    form {
+      gap: 4vh;
+
+      .dealType .dealType-options {
+        gap: 10px;
+      }
+
+      button {
+        font-size: 3vh;
+        margin-bottom: 10px;
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .description textarea {
+    min-height: 100px;
+    max-height: 25vh;
+  }
+
+  .Type select,
+  .username1 input,
+  #phone,
+  .Location input {
+    height: 3vh;
+    font-size: 2vh;
+  }
+} */

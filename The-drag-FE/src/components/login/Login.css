@@ -1,0 +1,344 @@
+.brand-box{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    
+    align-items: center;
+    p{
+        color:rgba(255, 238, 203, 1); ;
+    }
+  
+    input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+    }
+    input[type="checkbox"]:checked {
+    background-color: rgba(255, 238, 203, 1);; 
+    border-color: rgba(255, 238, 203, 1);;
+    }
+    input[type="checkbox"]:checked::before {
+    content: '✔';
+    display: block;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    line-height: 16px;
+    }
+}
+@media screen and (min-width:800px){
+    
+    .login-container{
+        width:70vw;
+        height:94vh;
+        background-color:  rgba(16, 14, 22, 1);
+        display:flex;
+        flex-direction: column;
+    }
+    .login-container>.top-logo{
+        width:100%;
+        height:58px;
+         &>img{
+          margin-left: 80px;
+          padding: 4px 0;
+          width:50px;
+          height:50px;
+          display: none
+         }
+    
+    }
+    .login-container>.main-part{
+        width:100%;
+        padding-left: 80px;
+        display: flex;
+        gap:0px;
+        height:100%;
+    }
+    .login-container>.main-part>.main-part-right{
+        width:60%;
+        /* height:100%; */
+        display:flex;
+                align-items: center;
+        /* margin-left: 2%;
+        margin-top: 5%; */
+        &>img{
+            width:90%;
+            height: 70%;
+            margin-top: -20%;
+        }
+    }
+    .login-container>.main-part>.main-part-left{
+        display:flex;
+        flex-direction: column;
+        width:40%;
+        gap:3vw;
+        
+        &>h1{
+            font-family: 'Jost';
+            font-size: 5vw;
+            font-weight: 500;
+            line-height: 100%;
+            text-align: left;
+            color: rgba(255, 238, 203, 1);
+            filter: drop-shadow(0px 4px 7px 0px rgba(0, 0, 0, 0.1), 0px 2px 4px 0px rgba(0, 0, 0, 0.15));
+        }
+        &>div{
+           
+            &>.heading{
+                font-family: Jost;font-size: 3vw;font-weight: 500;line-height: 30px;text-align: left;
+                color: rgba(255, 238, 203, 1);
+                filter:drop-shadow( 0px 4px 4px 0px rgba(0, 0, 0, 0.25));
+            }
+            &>.login{
+                font-family: Jost;font-size: 1.4vw;font-weight: 700;line-height: 15px;text-align: left;
+                color:rgba(255, 238, 203, 1);
+            }
+    
+        }
+        &>form{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            gap:30px;
+           
+            &>div{
+                display:flex;
+                flex-direction: column;
+                position:relative;
+                gap:10px;
+                &>label{
+                    font-family: 'Jost';
+                    font-size: 2vw;
+                    font-weight: 500;
+                    line-height: 20px;
+                    text-align: left;
+                    color:rgba(255, 238, 203, 1);
+                }
+                >div{
+                    display:flex;
+                  position: relative;
+                    >input{
+                        width:100%;
+                        font-family: 'Jost';
+                        font-size: 1vw;font-weight: 500;line-height: 20px;text-align: left;
+                        height:30px;
+                        border:none;
+                        border-bottom: 2px solid rgba(255, 238, 203, 1) ;
+                        outline:none;
+                        background-color: transparent;
+                        padding: 2px 2px;
+                        color:rgba(255, 238, 203, 1);
+                    }
+                    >img{
+                        position: absolute;
+                        right:-5px;
+                       
+
+                        width:30px;
+                        height:25px;
+                    }
+                }
+
+                &>input{
+                    width:100%;
+                    font-family: 'Jost';font-size: 1vw;font-weight: 500;line-height: 20px;text-align: left;
+                    height:30px;
+                    border:none;
+                    border-bottom: 2px solid rgba(255, 238, 203, 1) ;
+                    outline:none;
+                    background-color: transparent;
+                    padding: 2px 2px;
+                    color:rgba(255, 238, 203, 1);
+                }
+                >img{
+                    position: absolute;
+                        right:0px;
+                       bottom:2px;
+                        width:30px;
+                        height:25px; 
+                }
+                
+            }
+            &>button{
+               
+                
+                margin:10px auto;
+            outline:none;
+            border: none;
+                width: 10vw;height: 3vw;padding: 4px 8px;border-radius: 10px ;
+                font-family: Jost;font-size: 2vw;font-weight: 500;line-height: 100%;text-align: center;
+                
+            }
+        }
+    }
+    
+} 
+
+@media screen  and (max-width:800px){
+    
+    .login-container{
+        /* width:85vw;
+        height:94vh; */
+        background-color:  rgba(16, 14, 22, 1);
+        display:flex;
+        flex-direction: column;
+    }
+    .login-container>.top-logo{
+        width:100%;
+        height:58px;
+         &>img{
+          margin-left: 5vw;
+          padding: 4px 0;
+          width:50px;
+          height:50px;
+         }
+    
+    }
+    .login-container>.main-part{
+        width:100%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        display: flex;
+        gap:0px;
+        height:100%;
+    }
+    .login-container>.main-part>.main-part-right{
+
+        &>img{
+          display:none;
+        }
+    }
+    .login-container>.main-part>.main-part-left{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        gap:3vh;
+        
+        &>h1{
+            font-family: 'Jost';
+            font-size: 5vh;
+            font-weight: 500;
+            line-height: 100%;
+            text-align: left;
+            color: rgba(255, 238, 203, 1);
+            filter: drop-shadow(0px 4px 7px 0px rgba(0, 0, 0, 0.1), 0px 2px 4px 0px rgba(0, 0, 0, 0.15));
+        }
+        &>div{
+           
+            &>.heading{
+                font-family: 'Jost';
+                font-size: 4vh;
+                font-weight: 500;
+                line-height: 100%;
+                text-align: left;
+                color: rgba(255, 238, 203, 1);
+                filter:drop-shadow( 0px 4px 4px 0px rgba(0, 0, 0, 0.25));
+            }
+            &>.login{
+                font-family: 'Jost';
+                font-size: 2.5vh;
+                font-weight: 300;
+                line-height: 100%;
+                text-align: left;
+                color:rgba(255, 238, 203, 1);
+            }
+    
+        }
+        &>form{
+            width:90%;
+            display: flex;
+            flex-direction: column;
+            gap:4.3vh;
+           
+            &>div{
+                width:100%;
+                display:flex;
+                flex-direction: column;
+                position: relative;
+                gap:2.5vh;
+                &>label{
+                    font-family: 'Jost';
+                    font-size: 3.5vh;
+                    font-weight: 500;
+                    line-height: 100%;
+                    text-align: left;
+                    color:rgba(255, 238, 203, 1);
+                }
+                >div{
+                    display:flex;
+                  position: relative;
+                    >input{
+                        width:100%;
+                        font-family: 'Jost';
+                        font-size: 2.5vh;
+                        font-weight: 300;
+                        line-height: 100%;
+                        text-align: left;
+                        height:3vh;
+                        border:none;
+                        border-bottom: 2px solid rgba(255, 238, 203, 1) ;
+                        outline:none;
+                        background-color: transparent;
+                        padding: 3px 2px;
+                        padding-bottom: 5px;
+                        color:rgba(255, 238, 203, 1);
+                    }
+                    >img{
+                        position: absolute;
+                        right:-5px;
+                        width:30px;
+                        height:25px;
+                    }
+                }
+                &>input{
+                    width:100%;
+                    font-family: 'Jost';
+                    font-size: 2.5vh;
+                    font-weight: 300;
+                    line-height: 100%;
+                    text-align: left;
+                    height:3vh;
+                    border:none;
+                    border-bottom: 2px solid rgba(255, 238, 203, 1) ;
+                    outline:none;
+                    background-color: transparent;
+                    padding: 3px 2px;
+                    padding-bottom: 5px;
+                    color:rgba(255, 238, 203, 1);
+                }
+                >img{
+                    position: absolute;
+                        right:0px;
+                       bottom:2px;
+                        width:30px;
+                        height:25px; 
+                }
+                
+            }
+            &>button{
+               
+                
+                margin:10px auto;
+            outline:none;
+            border: none;
+                height: 5vh;
+                padding: 4px 8px;
+                border-radius: 10px ;
+                font-family: Jost;
+                font-size: 2.5vh;
+                font-weight: 500;
+                line-height: 100%;
+                text-align: center;
+               
+                
+                
+            }
+        }
+    }
+    
+
+}

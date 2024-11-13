@@ -1,0 +1,4780 @@
+@media screen and (min-width:800px){
+    .login-container{
+        width:70vw;
+        height:94vh;
+        background-color:  rgba(16, 14, 22, 1);
+        display:flex;
+        flex-direction: column;
+    }
+    .login-container>.top-logo{
+        width:100%;
+        height:58px;
+         &>img{
+          margin-left: 80px;
+          padding: 4px 0;
+          width:50px;
+          height:50px;
+         }
+    
+    }
+    .login-container>.main-part{
+        width:100%;
+        padding-left: 80px;
+        display: flex;
+        gap:0px;
+        height:100%;
+    }
+    .login-container>.main-part>.main-part-right{
+        width:60%;
+        height:100%;
+        display:flex;
+        margin-left: 2%;
+        margin-top: 5%;
+        &>img{
+            width:90%;
+            height: 70%;
+        }
+    }
+    .login-container>.main-part>.main-part-left{
+        display:flex;
+        flex-direction: column;
+        width:40%;
+        gap:3vw;
+        
+        &>h1{
+            font-family: 'Jost';
+            font-size: 5vw;
+            font-weight: 500;
+            line-height: 100%;
+            text-align: left;
+            color: rgba(255, 238, 203, 1);
+            filter: drop-shadow(0px 4px 7px 0px rgba(0, 0, 0, 0.1), 0px 2px 4px 0px rgba(0, 0, 0, 0.15));
+        }
+        &>div{
+           
+            &>.heading{
+                font-family: Jost;font-size: 3vw;font-weight: 500;line-height: 30px;text-align: left;
+                color: rgba(255, 238, 203, 1);
+                filter:drop-shadow( 0px 4px 4px 0px rgba(0, 0, 0, 0.25));
+            }
+            &>.login{
+                font-family: Jost;font-size: 1.4vw;font-weight: 700;line-height: 15px;text-align: left;
+                color:rgba(255, 238, 203, 1);
+            }
+    
+        }
+        &>form{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            gap:30px;
+           
+            &>div{
+                display:flex;
+                flex-direction: column;
+                position:relative;
+                gap:10px;
+                &>label{
+                    font-family: 'Jost';
+                    font-size: 2vw;
+                    font-weight: 500;
+                    line-height: 20px;
+                    text-align: left;
+                    color:rgba(255, 238, 203, 1);
+                }
+                >div{
+                    display:flex;
+                  position: relative;
+                    >input{
+                        width:100%;
+                        font-family: 'Jost';
+                        font-size: 1vw;font-weight: 500;line-height: 20px;text-align: left;
+                        height:30px;
+                        border:none;
+                        border-bottom: 2px solid rgba(255, 238, 203, 1) ;
+                        outline:none;
+                        background-color: transparent;
+                        padding: 2px 2px;
+                        color:rgba(255, 238, 203, 1);
+                    }
+                    >img{
+                        position: absolute;
+                        right:-5px;
+                       
+
+                        width:30px;
+                        height:25px;
+                    }
+                }
+
+                &>input{
+                    width:100%;
+                    font-family: 'Jost';font-size: 1vw;font-weight: 500;line-height: 20px;text-align: left;
+                    height:30px;
+                    border:none;
+                    border-bottom: 2px solid rgba(255, 238, 203, 1) ;
+                    outline:none;
+                    background-color: transparent;
+                    padding: 2px 2px;
+                    color:rgba(255, 238, 203, 1);
+                }
+                >img{
+                    position: absolute;
+                        right:0px;
+                       bottom:2px;
+                        width:30px;
+                        height:25px; 
+                }
+                
+            }
+            &>button{
+               
+                
+                margin:10px auto;
+            outline:none;
+            border: none;
+                width: 10vw;height: 3vw;padding: 4px 8px;border-radius: 10px ;
+                font-family: Jost;font-size: 2vw;font-weight: 500;line-height: 100%;text-align: center;
+                
+            }
+        }
+    }
+    
+} 
+
+@media screen  and (max-width:800px){
+    
+    .login-container{
+        width:85vw;
+        height:94vh;
+        background-color:  rgba(16, 14, 22, 1);
+        display:flex;
+        flex-direction: column;
+    }
+    .login-container>.top-logo{
+        width:100%;
+        height:58px;
+         &>img{
+          margin-left: 5vw;
+          padding: 4px 0;
+          width:50px;
+          height:50px;
+         }
+    
+    }
+    .login-container>.main-part{
+        width:100%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        display: flex;
+        gap:0px;
+        height:100%;
+    }
+    .login-container>.main-part>.main-part-right{
+
+        &>img{
+          display:none;
+        }
+    }
+    .login-container>.main-part>.main-part-left{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        gap:3vh;
+        
+        &>h1{
+            font-family: 'Jost';
+            font-size: 5vh;
+            font-weight: 500;
+            line-height: 100%;
+            text-align: left;
+            color: rgba(255, 238, 203, 1);
+            filter: drop-shadow(0px 4px 7px 0px rgba(0, 0, 0, 0.1), 0px 2px 4px 0px rgba(0, 0, 0, 0.15));
+        }
+        &>div{
+           
+            &>.heading{
+                font-family: 'Jost';
+                font-size: 4vh;
+                font-weight: 500;
+                line-height: 100%;
+                text-align: left;
+                color: rgba(255, 238, 203, 1);
+                filter:drop-shadow( 0px 4px 4px 0px rgba(0, 0, 0, 0.25));
+            }
+            &>.login{
+                font-family: 'Jost';
+                font-size: 2.5vh;
+                font-weight: 300;
+                line-height: 100%;
+                text-align: left;
+                color:rgba(255, 238, 203, 1);
+            }
+    
+        }
+        &>form{
+            width:90%;
+            display: flex;
+            flex-direction: column;
+            gap:4.3vh;
+           
+            &>div{
+                width:100%;
+                display:flex;
+                flex-direction: column;
+                position: relative;
+                gap:2.5vh;
+                &>label{
+                    font-family: 'Jost';
+                    font-size: 3.5vh;
+                    font-weight: 500;
+                    line-height: 100%;
+                    text-align: left;
+                    color:rgba(255, 238, 203, 1);
+                }
+                >div{
+                    display:flex;
+                  position: relative;
+                    >input{
+                        width:100%;
+                        font-family: 'Jost';
+                        font-size: 2.5vh;
+                        font-weight: 300;
+                        line-height: 100%;
+                        text-align: left;
+                        height:3vh;
+                        border:none;
+                        border-bottom: 2px solid rgba(255, 238, 203, 1) ;
+                        outline:none;
+                        background-color: transparent;
+                        padding: 3px 2px;
+                        padding-bottom: 5px;
+                        color:rgba(255, 238, 203, 1);
+                    }
+                    >img{
+                        position: absolute;
+                        right:-5px;
+                        width:30px;
+                        height:25px;
+                    }
+                }
+                &>input{
+                    width:100%;
+                    font-family: 'Jost';
+                    font-size: 2.5vh;
+                    font-weight: 300;
+                    line-height: 100%;
+                    text-align: left;
+                    height:3vh;
+                    border:none;
+                    border-bottom: 2px solid rgba(255, 238, 203, 1) ;
+                    outline:none;
+                    background-color: transparent;
+                    padding: 3px 2px;
+                    padding-bottom: 5px;
+                    color:rgba(255, 238, 203, 1);
+                }
+                >img{
+                    position: absolute;
+                        right:0px;
+                       bottom:2px;
+                        width:30px;
+                        height:25px; 
+                }
+                
+            }
+            &>button{
+               
+                
+                margin:10px auto;
+            outline:none;
+            border: none;
+                width: 100px;
+                height: 5vh;
+                padding: 4px 8px;
+                border-radius: 10px ;
+                font-family: Jost;
+                font-size: 2.5vh;
+                font-weight: 500;
+                line-height: 100%;
+                text-align: center;
+                position:absolute;
+                bottom:2px;
+                left:35%;
+                
+                
+            }
+        }
+    }
+    
+
+}
+
+* {
+    --w: 100vw;
+    --h: 100vh;
+}
+
+@media screen and (min-width:800px) {
+    .filter-popup {
+        color: rgba(64, 1, 1, 1);
+        background-color: rgba(255, 238, 203, 1);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 600px;
+        height: 480px;
+        padding-top: 34px;
+        padding-bottom: 15px;
+        padding-left: 52px;
+        padding-right: 52px;
+        position: relative;
+
+    }
+
+    .filter-popup>h3 {
+        font-family: 'Jost';
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 46.24px;
+        text-align: left;
+    }
+
+    .filter-form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 70%;
+
+        & button {
+            width: 117px;
+            height: 48px;
+
+
+            padding: 9px 35px 9px 35px;
+            gap: 10px;
+            border: 0.5px 0px 0px 0px;
+            opacity: 0px;
+            border: 2px solid rgba(64, 1, 1, 1);
+            color: rgba(64, 1, 1, 1);
+            font-family: Jost;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28.9px;
+            text-align: center;
+            background: transparent;
+            position: absolute;
+            top: 400px;
+            right: 40px;
+
+            &:hover {
+                background-color: rgba(64, 1, 1, 1);
+                color: rgba(255, 238, 203, 1);
+            }
+        }
+    }
+
+    .filter-form>div>label {
+        font-family: 'Jost';
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34.68px;
+        text-align: left;
+
+    }
+
+    .filter-form>div {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+    }
+
+    .filter-form>div {
+        >select {
+            width: 45%;
+            outline: none;
+            border: 2px solid rgba(64, 1, 1, 1);
+            color: rgba(64, 1, 1, 1);
+            font-family: Jost;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 21.68px;
+            text-align: left;
+            background-color: rgba(255, 238, 203, 1);
+        }
+
+        >input {
+            width: 45%;
+            outline: none;
+            border: 2px solid rgba(64, 1, 1, 1);
+            color: rgba(64, 1, 1, 1);
+            font-family: Jost;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 21.68px;
+            text-align: left;
+            background-color: rgba(255, 238, 203, 1);
+            padding-left: 2px;
+        }
+    }
+
+    option:hover {
+        background-color: rgba(64, 1, 1, 1);
+        color: rgba(255, 238, 203, 1);
+    }
+
+}
+
+@media screen and (min-width:250px) and (max-width:800px) {
+    .filter-popup {
+        color: rgba(64, 1, 1, 1);
+        background-color: rgba(255, 238, 203, 1);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: calc(var(--w)*0.8);
+        height: calc(var(--h)*0.7);
+        padding-top: 5px;
+        padding-bottom: 15px;
+        padding-left: 10%;
+
+        position: relative;
+
+    }
+
+    .filter-popup>h3 {
+        font-family: 'Jost';
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 100%;
+        text-align: left;
+    }
+
+    .filter-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 70%;
+
+
+        & button {
+            width: 80px;
+            height: 35px;
+
+
+            padding: 5px 12px;
+
+
+            opacity: 0px;
+            border: 2px solid rgba(64, 1, 1, 1);
+            color: rgba(64, 1, 1, 1);
+            font-family: Jost;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 100%;
+            text-align: center;
+            background: transparent;
+            position: absolute;
+            bottom: 20px;
+
+
+            &:hover {
+                background-color: rgba(64, 1, 1, 1);
+                color: rgba(255, 238, 203, 1);
+            }
+        }
+    }
+
+    .filter-form>div>label {
+        font-family: 'Jost';
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 100%;
+        text-align: left;
+
+    }
+
+    .filter-form>div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        position: relative;
+
+    }
+
+    .filter-form>div {
+        >select {
+            width: 80%;
+            outline: none;
+            border: 1px solid rgba(64, 1, 1, 1);
+            color: rgba(64, 1, 1, 1);
+            font-family: Jost;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 100%;
+            text-align: left;
+            background-color: rgba(255, 238, 203, 1);
+        }
+
+        >input {
+            width: 80%;
+            outline: none;
+            border: 1px solid rgba(64, 1, 1, 1);
+            color: rgba(64, 1, 1, 1);
+            font-family: Jost;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 100%;
+            text-align: left;
+            background-color: rgba(255, 238, 203, 1);
+            padding-left: 2px;
+        }
+    }
+
+
+}
+
+/*Promotions*/
+@media screen and (min-width:1100px) {
+    .promotions-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 37px auto;
+        margin-bottom: 100px;
+        min-height: 310px;
+
+    }
+
+    .promotions-container>.search-filter {
+        display: flex;
+        gap: 100px;
+        height: 50px;
+        margin: 20px auto;
+    }
+
+    .promotions-container>.search-filter>.search {
+        color: 2px solid rgba(64, 1, 1, 1);
+        width: max-content;
+        height: 100%;
+    }
+
+    .search>form {
+        background-color: rgba(255, 238, 203, 1);
+        height: 100%;
+        display: flex;
+        border-radius: 10px;
+    }
+
+    .search>form>label {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+
+    }
+
+    .search>form>input {
+        border-radius: 0 10px 10px 0;
+        background: transparent;
+        background-color: rgba(255, 238, 203, 1);
+        outline: none;
+        height: 100%;
+        border: none;
+        font-size: 20px;
+        margin-left: 10px;
+        color: rgba(64, 1, 1, 1);
+
+        &::placeholder {
+            color: rgba(64, 1, 1, 1);
+        }
+    }
+
+    .filter {
+        width: 250px;
+        display: flex;
+        gap: 10px;
+        height: 100%;
+        color: rgba(64, 1, 1, 1);
+        background-color: rgba(255, 238, 203, 1);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .filter>img {
+        width: 30px;
+        height: 30px;
+        margin: auto 4px;
+
+    }
+
+    .filter>p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .creators {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >h2 {
+            font-size: 50px;
+            margin-top: 50px;
+            color: white;
+            text-align: center;
+        }
+    }
+
+    .creator-list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 40px auto;
+        column-gap: 20px;
+        row-gap: 20px;
+
+
+    }
+
+    .more {
+        width: 180px;
+        height: 50px;
+        color: white;
+        background-color: rgba(28, 24, 38, 1);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-size: 22px;
+        font-family: 'Jost';
+        font-weight: 700;
+        box-shadow: 2px 2px 10px solid rgba(28, 24, 38, 1);
+        cursor: pointer;
+
+        transition: all 200ms 100ms ease-in;
+
+        &:hover {
+            background-color: white;
+            color: rgba(28, 24, 38, 1);
+        }
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1100px) {
+    .promotions-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        margin-bottom: 100px;
+        min-height: 310px;
+    }
+
+    .promotions-container>.search-filter {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 50px;
+        width: 20%;
+        margin: 20px auto;
+    }
+
+    .promotions-container>.search-filter>.search {
+        color: 2px solid rgba(64, 1, 1, 1);
+        width: 100%;
+        height: 50px;
+        transition: width 100ms 0s ease-in;
+
+        &:hover {
+
+            width: 130%;
+        }
+
+    }
+
+    .search>form {
+        background-color: rgba(255, 238, 203, 1);
+        height: 100%;
+        display: flex;
+        border-radius: 10px;
+        padding: 8px 2px;
+        width: 100%;
+
+    }
+
+    .search>form>label {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+
+    }
+
+    .search>form>input {
+        border-radius: 0 10px 10px 0;
+        background: transparent;
+        background-color: rgba(255, 238, 203, 1);
+        outline: none;
+        height: 100%;
+        border: none;
+        width: 80%;
+        font-size: 20px;
+        margin-left: 10px;
+        color: rgba(64, 1, 1, 1);
+
+        &::placeholder {
+            color: rgba(64, 1, 1, 1);
+        }
+    }
+
+    .filter {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        height: 50px;
+        color: rgba(64, 1, 1, 1);
+        background-color: rgba(255, 238, 203, 1);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 4px 2px;
+    }
+
+    .filter>img {
+        width: 30px;
+        height: 30px;
+        margin: auto 4px;
+
+    }
+
+    .filter>p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .creators {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >h2 {
+            font-size: 50px;
+            margin-top: 50px;
+            color: white;
+            text-align: center;
+        }
+    }
+
+    .creator-list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 40px auto;
+        column-gap: 20px;
+        row-gap: 20px;
+
+
+    }
+
+    .more {
+        width: 180px;
+        height: 50px;
+        color: white;
+        background-color: rgba(28, 24, 38, 1);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-size: 22px;
+        font-family: 'Jost';
+        font-weight: 700;
+        box-shadow: 2px 2px 10px solid rgba(28, 24, 38, 1);
+        cursor: pointer;
+
+        transition: all 200ms 100ms ease-in;
+
+        &:hover {
+            background-color: white;
+            color: rgba(28, 24, 38, 1);
+        }
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:800px) {
+
+
+    .promotions-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        margin-bottom: 100px;
+        min-height: 310px;
+    }
+
+    .promotions-container>.search-filter {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 50px;
+        margin: 10px auto;
+        width: 40%;
+    }
+
+    .promotions-container>.search-filter>.search {
+        color: rgba(64, 1, 1, 1);
+        width: 100%;
+        height: 100%;
+    }
+
+    .search>form {
+        background-color: rgba(255, 238, 203, 1);
+        height: 100%;
+        display: flex;
+        border-radius: 10px;
+        padding: 8px 2px;
+        width: 100%;
+        transition: width 100ms 0s ease-in;
+
+        &:hover {
+            width: 150%;
+        }
+    }
+
+    .search>form>label {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+
+    }
+
+    .search>form>input {
+        border-radius: 0 10px 10px 0;
+        background: transparent;
+        background-color: rgba(255, 238, 203, 1);
+        outline: none;
+        width: 80%;
+        height: 100%;
+        border: none;
+        font-size: 90%;
+        margin-left: 10px;
+        color: rgba(64, 1, 1, 1);
+
+        &::placeholder {
+            color: rgba(64, 1, 1, 1);
+        }
+    }
+
+    .filter {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        height: 100%;
+        color: rgba(64, 1, 1, 1);
+        background-color: rgba(255, 238, 203, 1);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 4px 2px;
+    }
+
+    .filter>img {
+        width: 30px;
+        height: 30px;
+        margin: auto 4px;
+
+    }
+
+    .filter>p {
+        font-size: 90%;
+        font-weight: 500;
+    }
+
+    .creators {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >h2 {
+            font-size: 30px;
+            margin-top: 30px;
+            color: white;
+            text-align: center;
+        }
+    }
+
+    .creator-list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 40px auto;
+        column-gap: 20px;
+        row-gap: 20px;
+
+
+    }
+
+    .more {
+        width: 180px;
+        height: 50px;
+        color: white;
+        background-color: rgba(28, 24, 38, 1);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-size: 22px;
+        font-family: 'Jost';
+        font-weight: 700;
+        box-shadow: 2px 2px 10px solid rgba(28, 24, 38, 1);
+        cursor: pointer;
+
+        transition: all 200ms 100ms ease-in;
+
+        &:hover {
+            background-color: white;
+            color: rgba(28, 24, 38, 1);
+        }
+    }
+}
+
+@media screen and (max-width:426px) {
+
+
+    .promotions-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        margin-bottom: 100px;
+        min-height: 310px;
+    }
+
+    .promotions-container>.search-filter {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 50px;
+        margin: 10px auto;
+        width: 40%;
+    }
+
+    .promotions-container>.search-filter>.search {
+        color: rgba(64, 1, 1, 1);
+        width: 100%;
+        height: 100%;
+    }
+
+    .search>form {
+        background-color: rgba(255, 238, 203, 1);
+        height: 100%;
+        display: flex;
+        border-radius: 10px;
+        padding: 8px 2px;
+        width: 100%;
+        transition: width 100ms 0s ease-in;
+
+        &:hover {
+            width: 150%;
+        }
+    }
+
+    .search>form>label {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+
+    }
+
+    .search>form>input {
+        border-radius: 0 10px 10px 0;
+        background: transparent;
+        background-color: rgba(255, 238, 203, 1);
+        outline: none;
+        width: 80%;
+        height: 100%;
+        border: none;
+        font-size: 90%;
+        margin-left: 10px;
+        color: rgba(64, 1, 1, 1);
+
+        &::placeholder {
+            color: rgba(64, 1, 1, 1);
+        }
+    }
+
+    .filter {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        height: 100%;
+        color: rgba(64, 1, 1, 1);
+        background-color: rgba(255, 238, 203, 1);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 4px 2px;
+    }
+
+    .filter>img {
+        width: 30px;
+        height: 30px;
+        margin: auto 4px;
+
+    }
+
+    .filter>p {
+        font-size: 90%;
+        font-weight: 500;
+    }
+
+    .creators {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >h2 {
+            font-size: 30px;
+            margin-top: 30px;
+            color: white;
+            text-align: center;
+        }
+    }
+
+    .creator-list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 40px auto;
+        column-gap: 20px;
+        row-gap: 20px;
+
+
+    }
+
+    .more {
+        width: 180px;
+        height: 50px;
+        color: white;
+        background-color: rgba(28, 24, 38, 1);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-size: 22px;
+        font-family: 'Jost';
+        font-weight: 700;
+        box-shadow: 2px 2px 10px solid rgba(28, 24, 38, 1);
+        cursor: pointer;
+
+        transition: all 200ms 100ms ease-in;
+
+        &:hover {
+            background-color: white;
+            color: rgba(28, 24, 38, 1);
+        }
+    }
+}
+
+/*Contact*/
+@media screen and (min-width:700px){
+    .contact-container{
+        width:600px;
+        height:580px;
+        background-color:  rgb(252, 245, 235);
+        padding:40px 20px;
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        position:relative;
+        >img{
+            position:absolute;
+            top:-15px;
+            right:-18px;
+        }
+    }
+    
+    .email{
+        display:flex;
+        align-items: center;
+        gap:50px;
+        font-size:20px;
+        font-family: 'Jost';
+        width:100%;
+         
+        >.email-main{
+             background-color: white;
+             padding: 5px 10px;
+             border:1px solid gray;
+             border-radius:10px;
+             width:100%;
+        }
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        width:100%;
+    >.subject{
+        display:flex;
+        align-items: center;
+        gap:7px;
+        font-size:20px;
+        font-family: 'Jost';
+        >input{
+            background-color: white;
+             padding: 5px 10px;
+             border:1px solid gray;
+             border-radius:10px;
+             height:40px;
+             width:100%;
+             font-size: 16px;
+        }
+    }
+    
+    >.body{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+    width:100%;
+    font-size: 20px;
+    font-family: 'Jost';
+       >textarea{
+       min-width: 100%;
+       max-width: 100%;
+        min-height: 200px;
+        max-height: 200px;
+        font-family: 'Jost';
+        padding-left:5px;
+       }
+    }
+    >.attachment{
+    
+        display:inline-flex;
+        flex-direction: column;
+        gap:5px;
+        width:60%;
+        font-size: 20px;
+        font-family: 'Jost';
+        position: relative;
+        
+           
+    
+        
+        >div{
+            width:100%;
+            height:120px;
+            padding-top:10px;
+           border-radius: 10px;
+            border-style: dashed;
+            position: relative;
+            display: flex;
+            gap:10px;
+            justify-content: center;
+        >label{
+            font-size: 14px;
+            position:absolute;
+            z-index: 1;
+        }
+        >input{
+         height:100%;
+         
+          width:100%;
+          position: absolute;
+           padding-top: 40px;
+           padding-left: 50px;
+          
+        }
+    }
+    }
+    >button{
+        position:absolute;
+        color:rgba(64, 1, 1, 1);
+        background: transparent;
+        cursor:pointer;
+        font-size: 24px;
+        font-family: 'Jost';
+        font-weight: 700;
+        width:150px;
+        bottom:50px;
+        right:20px;
+        height:50px;
+        outline:none;
+        border:none;
+        border:3px solid rgba(64, 1, 1, 1);
+        &:hover{
+            background-color: rgba(64, 1, 1, 1);
+            color: rgb(250, 234, 210);
+        }
+    }
+    }
+}
+
+@media screen and (max-width:700px){
+    .contact-container{
+        width:90vw;
+        height:85vh;
+        background-color:  rgb(252, 245, 235);
+        padding:10px 20px;
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        position:relative;
+        >img{
+            position:absolute;
+            top:-15px;
+            right:-18px;
+        }
+    }
+    
+    .email{
+
+        display:flex;
+        flex-direction: column;
+        gap:1vh;
+        font-size:3vh;
+        font-family: 'Jost';
+        width:100%;
+         
+        >.email-main{
+             background-color: white;
+             padding: 0.5vh 5px;
+             border:1px solid gray;
+             border-radius:10px;
+             width:100%;
+             
+             font-size:2vh;
+            
+        }
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        width:100%;
+    >.subject{
+        display:flex;
+        flex-direction: column;
+        gap:1vh;
+        font-size:3vh;
+        font-family: 'Jost';
+        >input{
+            background-color: white;
+             padding: 5px 10px;
+             border:1px solid gray;
+             border-radius:10px;
+             height:4vh;
+             width:100%;
+             font-size: 2vh;
+        }
+    }
+    
+    >.body{
+    display:flex;
+    flex-direction: column;
+    gap:1vh;
+    width:100%;
+    font-size: 3vh;
+    font-family: 'Jost';
+       >textarea{
+       min-width: 100%;
+       max-width: 100%;
+       height:150px;
+        min-height: 150px;
+        max-height: 150px;
+        font-family: 'Jost';
+        padding-left:5px;
+       }
+    }
+    >.attachment{
+    
+        display:inline-flex;
+        flex-direction: column;
+        gap:1vh;
+        width:100%;
+        font-size: 3vh;
+        font-family: 'Jost';
+        position: relative;
+        
+           
+    
+        
+        >div{
+            width:100%;
+            height:15vh;
+            padding-top:10px;
+           border-radius: 10px;
+            border-style: dashed;
+            position: relative;
+            display: flex;
+            gap:10px;
+            justify-content: center;
+            
+        >label{
+            font-size: 14px;
+            position:absolute;
+            z-index: 1;
+        }
+        >input{
+         height:100%;
+         
+          width:100%;
+          position: absolute;
+           padding-top: 8vh;
+           padding-left: 25%;
+          
+        }
+    }
+    }
+    >button{
+        position:absolute;
+        color:rgba(64, 1, 1, 1);
+        background: transparent;
+        cursor:pointer;
+        font-size: 3vh;
+        font-family: 'Jost';
+        font-weight: 700;
+        width:100px;
+        bottom:1vh;
+        right:10px;
+        padding:5px 4px;
+        outline:none;
+        border:none;
+        border:3px solid rgba(64, 1, 1, 1);
+        &:hover{
+            background-color: rgba(64, 1, 1, 1);
+            color: rgb(250, 234, 210);
+        }
+    }
+    }
+}
+
+/*Creator Card*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width:1025px) {
+    .creator-card-container {
+        width: 30%;
+        height: 256px;
+        background-color: rgba(255, 238, 203, 1);
+        gap: 3%;
+        display: flex;
+        position: relative;
+
+
+    }
+
+    .creator-card-left {
+        display: flex;
+        justify-content: center;
+        padding-top: 16px;
+        position: relative;
+        width: 57%;
+        height: 100%;
+    }
+
+    .creator-card-left>.box-upper {
+        position: absolute;
+        top: 3.5%;
+        left: 3.8%;
+        width: 25%;
+        height: 28%;
+        border-top: 2px solid rgba(64, 1, 1, 1);
+        border-left: 2px solid rgba(64, 1, 1, 1);
+    }
+
+    .creator-card-left>.box-lower {
+        position: absolute;
+        bottom: 6%;
+        right: 3%;
+        width: 30%;
+        height: 28%;
+        border-right: 2px solid rgba(64, 1, 1, 1);
+        border-bottom: 2px solid rgba(64, 1, 1, 1);
+    }
+
+    .creator-card-left>img {
+        width: 85%;
+        height: 90%;
+        background-repeat: no-repeat;
+        object-fit: fill;
+
+    }
+
+    .creator-card-right {
+        width: 43%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        position: relative;
+    }
+
+    .creator-name {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        &>h3 {
+
+            font-size: 20px;
+            font-family: 'Jost';
+            font-weight: 500;
+            line-height: 100%;
+            color: rgba(28, 24, 38, 1);
+            text-align: start;
+            overflow-wrap: break-word;
+        }
+
+        &>p {
+
+            font-size: 90%;
+            font-family: 'Jost';
+            font-weight: 400;
+            line-height: 90%;
+            color: rgba(51, 54, 63, 1);
+
+        }
+    }
+
+    .folowers {
+        width: 100%;
+    }
+
+    .followers>ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 100%;
+
+    }
+
+    .followers>ul>li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+
+        &>p {
+            font-family: 'Jost';
+            font-size: 12px;
+            line-height: 90%;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 1);
+
+        }
+
+    }
+
+    .creator-card-right>.contact-btn {
+        cursor: pointer;
+        height: 24px;
+        padding: 4.5px, 17.5px, 4.5px, 17.5px;
+        width: 50%;
+        position: absolute;
+        bottom: 2px;
+        font-family: 'Jost';
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 14.45px;
+        color: rgba(255, 238, 203, 1);
+        border: 1px solid rgba(64, 1, 1, 1);
+        ;
+        margin-left: 30px;
+        text-align: center;
+        background-color: rgba(64, 1, 1, 1);
+
+        &:hover {
+            background-color: rgba(255, 238, 203, 1);
+            color: rgba(64, 1, 1, 1);
+        }
+
+    }
+
+    #facebook {
+        gap: 16px;
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width:1025px) {
+    .creator-card-container {
+        width: 45%;
+        height: 256px;
+        background-color: rgba(255, 238, 203, 1);
+        gap: 3%;
+        display: flex;
+        position: relative;
+
+
+    }
+
+    .creator-card-left {
+        display: flex;
+        justify-content: center;
+        padding-top: 16px;
+        position: relative;
+        width: 60%;
+        height: 100%;
+    }
+
+    .creator-card-left>.box-upper {
+        position: absolute;
+        top: 3.5%;
+        left: 3.8%;
+        width: 25%;
+        height: 28%;
+        border-top: 2px solid rgba(64, 1, 1, 1);
+        border-left: 2px solid rgba(64, 1, 1, 1);
+    }
+
+    .creator-card-left>.box-lower {
+        position: absolute;
+        bottom: 6%;
+        right: 3%;
+        width: 30%;
+        height: 28%;
+        border-right: 2px solid rgba(64, 1, 1, 1);
+        border-bottom: 2px solid rgba(64, 1, 1, 1);
+    }
+
+    .creator-card-left>img {
+        width: 85%;
+        height: 90%;
+        background-repeat: no-repeat;
+        object-fit: fill;
+
+    }
+
+    .creator-card-right {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        position: relative;
+    }
+
+    .creator-name {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+
+        &>h3 {
+
+            font-size: 20px;
+            font-family: 'Jost';
+            font-weight: 500;
+            line-height: 100%;
+            color: rgba(28, 24, 38, 1);
+            text-align: start;
+            overflow-wrap: break-word;
+        }
+
+        &>p {
+
+            font-size: 90%;
+            font-family: 'Jost';
+            font-weight: 400;
+            line-height: 100%;
+            color: rgba(51, 54, 63, 1);
+
+        }
+    }
+
+    .folowers {
+        width: 100%;
+    }
+
+    .followers>ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 100%;
+
+    }
+
+    .followers>ul>li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+
+        &>p {
+            font-family: 'Jost';
+            font-size: 12px;
+            line-height: 90%;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 1);
+
+        }
+
+    }
+
+    .creator-card-right>.contact-btn {
+        cursor: pointer;
+        height: 24px;
+        padding: 4.5px, 17.5px, 4.5px, 17.5px;
+        width: 50%;
+        position: absolute;
+        bottom: 2px;
+        font-family: 'Jost';
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 14.45px;
+        color: rgba(255, 238, 203, 1);
+        border: 1px solid rgba(64, 1, 1, 1);
+        ;
+        margin-left: 30px;
+        text-align: center;
+        background-color: rgba(64, 1, 1, 1);
+
+        &:hover {
+            background-color: rgba(255, 238, 203, 1);
+            color: rgba(64, 1, 1, 1);
+        }
+
+    }
+
+    #facebook {
+        gap: 16px;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1000px) {
+    .creator-card-container {
+        width: 45%;
+        height: 256px;
+
+        background-color: rgba(255, 238, 203, 1);
+
+        gap: 3%;
+        display: flex;
+    }
+
+    .creator-card-left {
+        display: flex;
+        justify-content: center;
+        padding-top: 16px;
+        position: relative;
+        width: 57%;
+        height: 100%;
+    }
+
+    .creator-card-left>.box-upper {
+        position: absolute;
+        top: 3.5%;
+        left: 3.8%;
+        width: 25%;
+        height: 28%;
+        border-top: 2px solid rgba(64, 1, 1, 1);
+        border-left: 2px solid rgba(64, 1, 1, 1);
+    }
+
+    .creator-card-left>.box-lower {
+        position: absolute;
+        bottom: 6%;
+        right: 3%;
+        width: 30%;
+        height: 28%;
+        border-right: 2px solid rgba(64, 1, 1, 1);
+        border-bottom: 2px solid rgba(64, 1, 1, 1);
+    }
+
+    .creator-card-left>img {
+        width: 85%;
+        height: 90%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+
+    }
+
+    .creator-card-right {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        position: relative;
+    }
+
+    .creator-name {
+        margin-top: 15px;
+        width: 100%;
+
+        &>h3 {
+            font-size: 20px;
+            font-family: 'Jost';
+            font-weight: 500;
+            line-height: 23.12px;
+            color: rgba(28, 24, 38, 1);
+            text-align: start;
+            overflow-wrap: break-word;
+        }
+
+        &>p {
+            font-size: 90%;
+            font-family: 'Jost';
+            font-weight: 400;
+            line-height: 90%;
+            color: rgba(51, 54, 63, 1);
+
+        }
+    }
+
+    .followers>ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+    }
+
+    .followers>ul>li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &>p {
+            font-family: 'Jost';
+            font-size: 80%;
+            line-height: 90%;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 1);
+
+        }
+
+    }
+
+    .creator-card-right>.contact-btn {
+        cursor: pointer;
+        position: absolute;
+        bottom: 4px;
+        height: 24px;
+        padding: 4.5px, 17.5px, 4.5px, 17.5px;
+        width: 50%;
+        font-family: 'Jost';
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 14.45px;
+        color: rgba(255, 238, 203, 1);
+        border: 1px solid rgba(64, 1, 1, 1);
+        ;
+        margin-left: 30px;
+        text-align: center;
+        background-color: rgba(64, 1, 1, 1);
+
+        &:hover {
+            background-color: rgba(255, 238, 203, 1);
+            color: rgba(64, 1, 1, 1);
+        }
+
+    }
+
+    #facebook {
+        gap: 16px;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:800px) {
+    .creator-card-container {
+        width: 70%;
+        height: 300px;
+
+        background-color: rgba(255, 238, 203, 1);
+
+        gap: 3%;
+        display: flex;
+    }
+
+    .creator-card-left {
+        display: flex;
+        justify-content: center;
+        padding-top: 16px;
+        position: relative;
+        width: 57%;
+        height: 100%;
+    }
+
+    .creator-card-left>.box-upper {
+        position: absolute;
+        top: 3.5%;
+        left: 3.8%;
+        width: 25%;
+        height: 28%;
+        border-top: 2px solid rgba(64, 1, 1, 1);
+        border-left: 2px solid rgba(64, 1, 1, 1);
+    }
+
+    .creator-card-left>.box-lower {
+        position: absolute;
+        bottom: 6%;
+        right: 3%;
+        width: 30%;
+        height: 28%;
+        border-right: 2px solid rgba(64, 1, 1, 1);
+        border-bottom: 2px solid rgba(64, 1, 1, 1);
+    }
+
+    .creator-card-left>img {
+        width: 85%;
+        height: 90%;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+
+    .creator-card-right {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+        position: relative;
+    }
+
+    .creator-name {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 4px;
+
+        &>h3 {
+            font-size: 20px;
+            font-family: 'Jost';
+            font-weight: 700;
+            line-height: 100%;
+            color: rgba(28, 24, 38, 1);
+            text-align: start;
+            overflow-wrap: break-word;
+        }
+
+        &>p {
+            font-size: 15px;
+            font-family: 'Jost';
+            font-weight: 400;
+            line-height: 110%;
+            color: rgba(51, 54, 63, 1);
+
+        }
+    }
+
+    .followers>ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .followers>ul>li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &>p {
+            font-family: 'Jost';
+            font-size: 15px;
+            line-height: 100%;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 1);
+
+        }
+
+    }
+
+    .creator-card-right>.contact-btn {
+        cursor: pointer;
+        position: absolute;
+        bottom: 4px;
+        height: 10%;
+        padding: 4px 2px;
+        width: 55%;
+        font-family: 'Jost';
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 100%;
+        color: rgba(255, 238, 203, 1);
+        border: none;
+        margin-left: 40%;
+        text-align: center;
+        background-color: rgba(64, 1, 1, 1);
+
+        &:hover {
+            background-color: rgba(255, 238, 203, 1);
+            color: rgba(64, 1, 1, 1);
+        }
+
+    }
+
+    #facebook {
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .creator-card-container {
+        width: 90%;
+        height: 250px;
+
+        background-color: rgba(255, 238, 203, 1);
+        padding-right: 4px;
+        gap: 0%;
+        display: flex;
+    }
+
+    .creator-card-left {
+        display: flex;
+        justify-content: center;
+        padding-top: 16px;
+        position: relative;
+        width: 64%;
+        height: 100%;
+    }
+
+    .creator-card-left>.box-upper {
+        position: absolute;
+        top: 3.5%;
+        left: 3.8%;
+        width: 25%;
+        height: 28%;
+        border-top: 2px solid rgba(64, 1, 1, 1);
+        border-left: 2px solid rgba(64, 1, 1, 1);
+    }
+
+    .creator-card-left>.box-lower {
+        position: absolute;
+        bottom: 6%;
+        right: 3.4%;
+        width: 30%;
+        height: 28%;
+        border-right: 2px solid rgba(64, 1, 1, 1);
+        border-bottom: 2px solid rgba(64, 1, 1, 1);
+    }
+
+    .creator-card-left>img {
+        width: 85%;
+        height: 90%;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+
+    .creator-card-right {
+        width: 36%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+        position: relative;
+
+    }
+
+    .creator-name {
+
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+
+
+        width: 100%;
+        gap: 4px;
+
+        &>h3 {
+            width: 100%;
+            overflow-wrap: break-word;
+            font-size: 18px;
+            font-family: 'Jost';
+            font-weight: 700;
+            line-height: 100%;
+            color: rgba(28, 24, 38, 1);
+            text-align: start;
+        }
+
+        &>p {
+            font-size: 80%;
+            font-family: 'Jost';
+            font-weight: 400;
+            line-height: 100%;
+            color: rgba(51, 54, 63, 1);
+
+        }
+    }
+
+    .followers>ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+    }
+
+    .followers>ul>li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        &>p {
+            font-family: 'Jost';
+            font-size: 12px;
+            line-height: 100%;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 1);
+
+        }
+
+    }
+
+    .creator-card-right>.contact-btn {
+        cursor: pointer;
+        position: absolute;
+        bottom: 4px;
+        height: 10%;
+        padding: 4px 2px;
+        width: 55%;
+        font-family: 'Jost';
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 100%;
+        color: rgba(255, 238, 203, 1);
+        border: none;
+        margin-left: 40%;
+        text-align: center;
+        background-color: rgba(64, 1, 1, 1);
+
+        &:hover {
+            background-color: rgba(255, 238, 203, 1);
+            color: rgba(64, 1, 1, 1);
+        }
+
+    }
+
+    #facebook {
+        gap: 16px;
+    }
+}
+
+/*Dropdown*/
+@media screen and (min-width:600px)
+{
+  .dropdown{
+   
+    z-index: 20;
+    width:max-content;
+   overflow-y: scroll;
+
+    background-color: rgb(255, 255, 255);
+         position:absolute;
+         left:20%;
+   
+    height:300px;
+    box-shadow: 1px 2px 10px rgb(109, 108, 108);
+    padding:4px 0;
+    
+   
+}
+.dropdown>ul{
+list-style: none;
+}
+.dropdown>ul>li{
+   
+   
+padding:5px 5px;
+font-size: 15px;
+color:rgba(64, 1, 1, 1);
+font-weight: 400;
+padding-left: 10px;
+line-height: 110%;
+border-bottom: 1px solid rgba(64, 1, 1, 1);
+}
+.dropdown>ul>li:hover{
+
+  color:rgba(255, 238, 203, 1) ;
+  cursor:pointer;
+  background-color:rgba(64, 1, 1, 1);
+  
+}
+}
+
+@media screen and (max-width:600px){
+  .dropdown{
+   
+    z-index: 20;
+    width:max-content;
+   overflow-y: scroll;
+   position:absolute;
+    background-color: rgb(255, 255, 255);
+    top:110%;
+    left:0%;
+    height:300px;
+    box-shadow: 1px 2px 10px rgb(109, 108, 108);
+    padding:4px 0;
+    
+}
+.dropdown>ul{
+list-style: none;
+}
+.dropdown>ul>li{
+   
+   
+padding:5px 5px;
+font-size: 12px;
+line-height:110%;
+color:rgba(64, 1, 1, 1);
+font-weight: 400;
+padding-left: 10px;
+border-bottom: 1px solid rgba(64, 1, 1, 1);
+}
+.dropdown>ul>li:hover{
+
+  color:rgba(255, 238, 203, 1) ;
+  cursor:pointer;
+  background-color:rgba(64, 1, 1, 1);
+  
+}
+}
+
+/*Footer*/
+@media screen and (min-width:1100px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .footer-container {
+        color: #d5d5d5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(28, 24, 38, 1);
+        width: 100%;
+        height: 200px;
+
+    }
+
+    .footer-upper {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        align-items: center;
+        margin: 0px auto;
+        width: 100%;
+        margin-top: 24px;
+
+        gap: 20px;
+    }
+
+    .footer-upper p {
+        font-family: "Roboto";
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 37.5px;
+
+    }
+
+    .footer-upper hr {
+        width: 307px;
+        border: 1px solid rgba(213, 213, 213, 1)
+    }
+
+
+
+
+}
+
+@media screen and (min-width:800px) and (max-width:1100px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .footer-container {
+        color: #d5d5d5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(28, 24, 38, 1);
+        width: 100%;
+        height: 200px;
+
+    }
+
+    .footer-upper {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        align-items: center;
+        margin: 0px auto;
+        width: 100%;
+        margin-top: 24px;
+
+        gap: 20px;
+    }
+
+    .footer-upper p {
+        font-family: "Roboto";
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 37.5px;
+
+    }
+
+    .footer-upper hr {
+        width: 307px;
+        border: 1px solid rgba(213, 213, 213, 1)
+    }
+
+
+
+
+}
+
+@media screen and (max-width:800px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .footer-container {
+        color: #d5d5d5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(28, 24, 38, 1);
+        width: 100%;
+        height: 200px;
+
+    }
+
+    .footer-upper {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        margin: 0px auto;
+        width: 100%;
+        margin-top: 24px;
+
+        gap: 20px;
+    }
+
+    .footer-upper p {
+        font-family: "Roboto";
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 37.5px;
+
+    }
+
+    .footer-upper hr {
+        width: 80%;
+        border: 1px solid rgba(213, 213, 213, 1)
+    }
+
+
+
+
+}
+
+/*Navbar*/
+*{
+    box-sizing: border-box;
+}
+
+@media screen and (min-width:1100px){
+   .nav-container{
+       width:100vw;
+       height:20vh;
+       display:flex;
+       flex-direction: column;
+       gap:2.5vh;
+       margin-bottom: 40px;
+       justify-content: center;
+      align-items: space-between;
+       background-color: #1c1826;
+    }
+    .nav-btn{
+       cursor: pointer;
+       font-family: Jost;
+       border-radius: 10px;
+       background-color: white;
+       color: #1c1826;
+        font-weight: 700;
+         outline: none;
+          border: none;
+          width:max-content;
+
+    }
+
+    .creator-deals{
+       width:100%;
+
+       >table{
+        
+       width:100%;
+   border-collapse: collapse;
+   height:60px;
+   >thead{
+       width:100%;
+      
+       
+
+       >td{
+           width:50%;
+           background-color: rgba(255, 238, 203, 1) ;
+           border: none;
+           >a{
+               width:100%;
+               display:flex;
+               align-items: center;
+               text-decoration: none;
+               color:inherit;
+               height:100%;
+               &#f{
+                  justify-content: flex-end;
+                
+               }
+              
+               >h3{
+                
+                   font-size:30px;
+                   color:rgba(64, 1, 1, 1);
+               }
+           }
+           
+       
+       }
+   
+       >.first{
+          
+           cursor: pointer;
+          
+           border-right: 40px solid transparent;
+           
+           
+       }
+       
+       >.second{
+        
+          cursor: pointer;
+           padding-left: 40px;
+           
+       }
+       >.selected{
+           background-color: black;
+           >a>h3{
+               color:rgba(255, 238, 203, 1) ;
+               }
+       }
+   
+   }
+   }
+}
+
+
+    .navbar{
+        
+        width:100%;
+        height:15vh;
+       
+        background-color: #1c1826;
+        display: flex;
+        justify-content: space-between;
+        padding:10px 5vw;
+        align-items: center;
+       
+       
+        
+    }
+    .navbar>a{
+       display:flex;
+       gap:10px;
+       text-decoration: none;
+       color:white;
+       align-items: center;
+       >p{
+           font-size:30px;
+           font-family: 'Jost';
+           font-weight:500;
+       }
+    }
+    .navbar .nav-logo{
+          width:53px;
+          height:44px;
+       
+         cursor:pointer;
+    }
+    .navbar .page-items ul {
+        list-style:none;
+       color:#d5d5d5;
+        display: flex;
+        gap:40px;
+    }
+    .navbar .page-items ul li{
+        cursor:pointer;
+    }
+    .navbar .page-items ul li :hover{
+        color:rgb(249, 212, 159);
+        transition: color 0 100ms;
+    }
+    .navbar .page-items ul li a{
+        text-decoration: none;
+        color:inherit;
+    }
+    .nav-icons-list{
+        display: flex;
+        gap:20px;
+        >button{
+           font-size: 20px;
+           padding:5px 10px;
+        }
+    }
+    .nav-icons-list .nav-icon {
+     width:32px;
+     height:32px;
+     
+    }
+}
+@media screen and (min-width:800px) and (max-width:1100px){
+   .nav-container{
+       width:100%;
+       height:20vh;
+       display:flex;
+       flex-direction: column;
+       gap:2.5vh;
+       margin-bottom: 40px;
+       justify-content: center;
+      align-items: center;
+       background-color: #1c1826;
+    }
+
+    .nav-btn{
+       cursor: pointer;
+       font-family: Jost;
+       border-radius: 10px;
+       background-color: white;
+       color: #1c1826;
+        font-weight: 700;
+         outline: none;
+          border: none;
+          width:max-content;
+
+    }
+
+    .creator-deals{
+       width:100%;
+
+       >table{
+        border-collapse: collapse;
+       width:100%;
+   
+   height:60px;
+   >thead{
+       width:100%;
+      
+       
+
+       >td{
+           width:50%;
+           background-color: rgba(255, 238, 203, 1) ;
+           >a{
+               width:100%;
+               display:flex;
+               align-items: center;
+               text-decoration: none;
+               color:inherit;
+               height:100%;
+               &#f{
+                  justify-content: flex-end;
+                
+               }
+              
+               >h3{
+                
+                   font-size:30px;
+                   color:rgba(64, 1, 1, 1);
+               }
+           }
+           
+       
+       }
+   
+       >.first{
+          
+           cursor: pointer;
+          
+           border-right: 40px solid transparent;
+           
+           
+       }
+       
+       >.second{
+        
+          cursor: pointer;
+           padding-left: 40px;
+           
+       }
+       >.selected{
+           background-color: black;
+           >a>h3{
+               color:rgba(255, 238, 203, 1) ;
+               }
+       }
+   
+   }
+   }
+}
+    .navbar{
+        
+       width:100%;
+       height:15vh;
+      
+       background-color: #1c1826;
+       display: flex;
+       justify-content: space-between;
+       padding:10px 5vw;
+       align-items: center;
+       
+      
+       
+        
+    }
+    .navbar>a{
+       display:flex;
+       gap:10px;
+       text-decoration: none;
+       color:white;
+       align-items: center;
+       >p{
+           font-size:30px;
+           font-family: 'Jost';
+           font-weight:500;
+       }
+    }
+    .navbar .nav-logo{
+          width:53px;
+          height:44px;
+        
+         cursor:pointer;
+    }
+    .navbar .page-items ul {
+        list-style:none;
+       color:#d5d5d5;
+        display: flex;
+        gap:40px;
+    }
+    .navbar .page-items ul li{
+        cursor:pointer;
+    }
+    .navbar .page-items ul li :hover{
+        color:rgb(249, 212, 159);
+        transition: color 0 100ms;
+    }
+    .navbar .page-items ul li a{
+        text-decoration: none;
+        color:inherit;
+    }
+    .nav-icons-list{
+        display: flex;
+        gap:20px;
+        >button{
+           font-size: 20px;
+           padding:5px 10px;
+        }
+    }
+    .nav-icons-list .nav-icon {
+     width:32px;
+     height:32px;
+     
+    }
+
+}
+@media screen and   (max-width:800px){
+   .nav-container{
+       width:100%;
+       height:18vh;
+       display:flex;
+       flex-direction: column;
+       gap:1.5vh;
+       margin-bottom: 40px;
+       justify-content: center;
+      align-items: center;
+       background-color: #1c1826;
+    }
+
+    .nav-btn{
+       max-height:7vh;
+       cursor: pointer;
+       font-family: Jost;
+       border-radius: 10px;
+       background-color: white;
+       color: #1c1826;
+        font-weight: 700;
+        font-size:2vh;
+         outline: none;
+          border: none;
+          width:max-content;
+          max-width:40vw; 
+    }
+
+    .creator-deals{
+       width:100%;
+
+       >table{
+        border-collapse: collapse;
+       width:100%;
+   
+   height:40px;
+   >thead{
+       width:100%;
+      
+       
+
+       >td{
+           width:50%;
+           background-color: rgba(255, 238, 203, 1) ;
+           >a{
+               width:100%;
+               display:flex;
+               align-items: center;
+               text-decoration: none;
+               color:inherit;
+               height:100%;
+               &#f{
+                  justify-content: flex-end;
+                
+               }
+              
+               >h3{
+                
+                   font-size:20px;
+                   color:rgba(64, 1, 1, 1);
+               }
+           }
+           
+       
+       }
+   
+       >.first{
+          
+           cursor: pointer;
+          
+           border-right: 40px solid transparent;
+           
+           
+       }
+       
+       >.second{
+        
+          cursor: pointer;
+           padding-left: 40px;
+           
+       }
+       >.selected{
+           background-color: black;
+           >a>h3{
+               color:rgba(255, 238, 203, 1) ;
+               }
+       }
+   
+   }
+   }
+}
+    .navbar{
+        
+       width:100%;
+       height:15vh;
+      
+       background-color: #1c1826;
+       display: flex;
+       justify-content: space-between;
+       padding:10px 5vw;
+       align-items: center;
+        
+    }
+    .navbar>a{
+       display:flex;
+       gap:10px;
+       text-decoration: none;
+       color:white;
+       align-items: center;
+       >p{
+           font-size:30px;
+           font-family: 'Jost';
+           font-weight:500;
+       }
+    }
+    .navbar .nav-logo{
+          width:45px;
+          height:40px;
+        
+         cursor:pointer;
+    }
+    .navbar .page-items ul {
+        list-style:none;
+       color:#d5d5d5;
+        display: flex;
+        gap:40px;
+    }
+    .navbar .page-items ul li{
+        cursor:pointer;
+    }
+    .navbar .page-items ul li :hover{
+        color:rgb(249, 212, 159);
+        transition: color 0 100ms;
+    }
+    .navbar .page-items ul li a{
+        text-decoration: none;
+        color:inherit;
+    }
+    .nav-icons-list{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        >button{
+           font-size:15px;
+           padding:2px 4px;
+        }
+    }
+    .nav-icons-list .nav-icon {
+     width:32px;
+     height:32px;
+     
+    }
+}
+
+/*Register*/
+@media screen and (min-width:800px) {
+    .register-container {
+
+        color: rgba(64, 1, 1, 1);
+        background-color: rgba(255, 238, 203, 1);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 600px;
+        height: max-content;
+        padding: 20px 10px;
+        padding-left: 20px;
+        position: relative;
+
+        & h3 {
+            font-family: 'Jost';
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 46.24px;
+            text-align: left;
+        }
+
+        & form {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+
+
+            >.contacts {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                flex-wrap: wrap;
+                gap: 6px;
+
+                >div {
+                    width: 100%;
+
+
+                }
+
+                >.Mobile {
+                    gap: 55px;
+                }
+            }
+
+            & button {
+                width: 117px;
+                height: 48px;
+
+
+                padding: 9px 20px;
+                gap: 10px;
+                border: 0.5px 0px 0px 0px;
+                opacity: 0px;
+                border: 2px solid rgba(64, 1, 1, 1);
+                color: rgba(64, 1, 1, 1);
+                font-family: Jost;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 28.9px;
+                text-align: center;
+                background: transparent;
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+
+                &:hover {
+                    background-color: rgba(64, 1, 1, 1);
+                    color: #ffeecb;
+                }
+            }
+
+            >.contacts>div {
+                display: flex;
+                gap: 40px;
+
+                >div {
+                    display: flex;
+                    flex-direction: column;
+
+                    >input {
+
+                        margin-left: 15px;
+                        outline: none;
+                        border: 2px solid #400101;
+                        color: #400101;
+                        font-family: Jost;
+                        font-size: 15px;
+                        font-weight: 500;
+                        line-height: 21.68px;
+                        text-align: left;
+                        background-color: #ffeecb;
+                        padding-left: 4px;
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                    }
+
+                    >label {
+                        display: flex;
+                        gap: 6px;
+                        font-family: 'Jost';
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 34.68px;
+                    }
+                }
+
+                >label {
+                    font-family: 'Jost';
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 34.68px;
+                    text-align: left;
+                }
+
+                >input {
+                    width: 45%;
+                    padding-left: 4px;
+                    outline: none;
+                    border: 2px solid #400101;
+                    color: #400101;
+                    font-family: Jost;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 100%;
+                    text-align: left;
+                    background-color: #ffeecb;
+                }
+            }
+        }
+
+        >img {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+
+        }
+    }
+
+    .name {
+        width: 45%;
+
+    }
+
+    .Type {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        >label {
+            font-family: 'Jost';
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 34.68px;
+        }
+
+        >select {
+            height: 25px;
+            width: 40%;
+        }
+
+
+
+    }
+
+    #profileImage {
+        display: flex;
+        gap: 40px;
+
+        >input {
+            height: max-content;
+            width: 200px;
+            padding-left: 0px;
+        }
+
+        >p {
+            font-size: 15px;
+        }
+    }
+
+    #phone {
+        width: 200px;
+
+    }
+
+    .Location {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+
+        >label {
+            font-family: 'Jost';
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 34.68px;
+        }
+
+        >input {
+            height: 25px;
+            width: 150px;
+        }
+    }
+
+    .username {
+        width: 100%;
+
+        font-family: 'Jost';
+        display: flex;
+        gap: 20px;
+
+        >label {
+            font-size: 20px;
+        }
+
+        >input {
+            width: 60%;
+            height: 25px;
+            font-size: 18px;
+            padding-left: 4px;
+        }
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width:450px) and (max-width:800px) {
+    .register-container {
+
+        color: rgba(64, 1, 1, 1);
+        background-color: rgba(255, 238, 203, 1);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 80vw;
+        height: 88vh;
+        padding: 20px 10px;
+        padding-left: 7vw;
+        position: relative;
+
+        & h3 {
+            font-family: 'Jost';
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 46.24px;
+            text-align: left;
+        }
+
+        & form {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+
+            >.contacts {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                gap: 0.5vh;
+
+                >.mobileNo {
+                    font-size: 2vh;
+                }
+
+            }
+
+            & button {
+                width: 100px;
+                height: 5vh;
+
+
+                padding: 2px 3px;
+                gap: 10px;
+                border: 0.5px 0px 0px 0px;
+                opacity: 0px;
+                border: 2px solid rgba(64, 1, 1, 1);
+                color: rgba(64, 1, 1, 1);
+                font-family: Jost;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 28.9px;
+                text-align: center;
+                background: transparent;
+                position: absolute;
+                bottom: 10px;
+                right: 40px;
+
+                &:hover {
+                    background-color: rgba(64, 1, 1, 1);
+                    color: #ffeecb;
+                }
+            }
+
+            >.contacts>div {
+                display: flex;
+
+                gap: 0.1vh;
+                align-items: center;
+
+                >div {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 0px;
+
+                    >input {
+
+                        margin-left: 15px;
+                        outline: none;
+                        border: 1px solid #400101;
+                        color: #400101;
+                        font-family: Jost;
+                        height: 3vh;
+                        font-size: 2vh;
+                        font-weight: 500;
+                        line-height: 21.68px;
+                        text-align: left;
+                        background-color: #ffeecb;
+                        padding-left: 4px;
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                        width: 90%;
+                    }
+
+                    >label {
+                        display: flex;
+                        gap: 2vh;
+                        font-family: 'Jost';
+                        font-size: 2vh;
+                        font-weight: 400;
+                        line-height: 34.68px;
+                    }
+                }
+
+                >label {
+                    font-family: 'Jost';
+                    font-size: 2vh;
+                    font-weight: 400;
+                    line-height: 34.68px;
+                    text-align: left;
+                }
+
+                >input {
+                    width: 50%;
+                    margin-left: 15px;
+                    outline: none;
+                    border: 1px solid #400101;
+                    color: #400101;
+                    font-family: Jost;
+                    font-size: 2vh;
+                    font-weight: 500;
+                    line-height: 21.68px;
+                    text-align: left;
+                    background-color: #ffeecb;
+                }
+            }
+        }
+
+        >img {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+
+        }
+    }
+
+    .name {
+        width: 45%;
+
+    }
+
+    .Type {
+
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        width: 40%;
+
+        >label {
+            font-family: 'Jost';
+            font-size: 2vh;
+            font-weight: 400;
+            line-height: 34.68px;
+        }
+
+        >select {
+
+            width: 60%;
+            height: 3vh;
+            font-size: 2vh;
+
+        }
+
+
+
+    }
+
+    #profileImage {
+        display: flex;
+
+        >label {
+            font-size: 2vh;
+        }
+
+        >input {
+            height: max-content;
+            width: 50%;
+        }
+
+        >p {
+            font-size: 12px;
+        }
+    }
+
+    #phone {
+        width: 50%;
+        font-size: 2vh;
+        height: 3vh;
+
+
+    }
+
+    .Location {
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 20px;
+        width: 50%;
+
+        >label {
+            font-family: 'Jost';
+            font-size: 2vh;
+            font-weight: 400;
+            line-height: 34.68px;
+
+        }
+
+        >input {
+
+            width: 60%;
+            height: 3vh;
+            font-size: 2vh;
+
+        }
+    }
+
+    .username {
+        width: 100%;
+
+        font-family: 'Jost';
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        >label {
+            font-size: 2vh;
+        }
+
+        >input {
+            width: 60%;
+            height: 3vh;
+            font-size: 2vh;
+            padding-left: 4px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width:450px) {
+    .register-container {
+
+        color: rgba(64, 1, 1, 1);
+        background-color: rgba(255, 238, 203, 1);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 80vw;
+        height: 88vh;
+        padding: 20px 10px;
+        padding-left: 3vw;
+        position: relative;
+
+        & h3 {
+            font-family: 'Jost';
+            font-size: 3vh;
+            font-weight: 500;
+            line-height: 100%;
+            text-align: left;
+        }
+
+        & form {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+
+            >.contacts {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                gap: 0.5vh;
+
+                >.mobileNo {
+                    font-size: 2vh;
+                }
+
+            }
+
+            & button {
+                width: 100px;
+                height: 5vh;
+
+
+                padding: 2px 3px;
+                gap: 10px;
+                border: 0.5px 0px 0px 0px;
+                opacity: 0px;
+                border: 2px solid rgba(64, 1, 1, 1);
+                color: rgba(64, 1, 1, 1);
+                font-family: Jost;
+                font-size: 3vh;
+                font-weight: 500;
+                line-height: 28.9px;
+                text-align: center;
+                background: transparent;
+                position: absolute;
+                bottom: 10px;
+                right: 40px;
+
+                &:hover {
+                    background-color: rgba(64, 1, 1, 1);
+                    color: #ffeecb;
+                }
+            }
+
+            >.contacts>div {
+                display: flex;
+
+                gap: 0.1vh;
+                align-items: center;
+
+                >div {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 0px;
+
+                    >input {
+
+                        margin-left: 15px;
+                        outline: none;
+                        border: 1px solid #400101;
+                        color: #400101;
+                        font-family: Jost;
+                        height: 3vh;
+                        font-size: 2vh;
+                        font-weight: 500;
+                        line-height: 21.68px;
+                        text-align: left;
+                        background-color: #ffeecb;
+                        padding-left: 4px;
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                        width: 90%;
+                    }
+
+                    >label {
+                        display: flex;
+                        gap: 2vh;
+                        font-family: 'Jost';
+                        font-size: 2vh;
+                        font-weight: 400;
+                        line-height: 34.68px;
+                    }
+                }
+
+                >label {
+                    font-family: 'Jost';
+                    font-size: 2vh;
+                    font-weight: 400;
+                    line-height: 34.68px;
+                    text-align: left;
+                }
+
+                >input {
+                    width: 50%;
+                    margin-left: 15px;
+                    outline: none;
+                    border: 1px solid #400101;
+                    color: #400101;
+                    font-family: Jost;
+                    font-size: 2vh;
+                    font-weight: 500;
+                    line-height: 21.68px;
+                    text-align: left;
+                    background-color: #ffeecb;
+                }
+            }
+        }
+
+        >img {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+
+        }
+    }
+
+    .name {
+        width: 45%;
+
+    }
+
+    .Type {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        >label {
+            font-family: 'Jost';
+            font-size: 2vh;
+            font-weight: 400;
+            line-height: 34.68px;
+        }
+
+        >select {
+
+            width: 60%;
+            height: 3vh;
+            font-size: 2vh;
+
+        }
+
+
+
+    }
+
+    #profileImage {
+        display: flex;
+
+        >label {
+            font-size: 2vh;
+            line-height: 100%;
+        }
+
+        >input {
+            height: max-content;
+            width: 50%;
+        }
+
+        >p {
+            font-size: 10px;
+        }
+    }
+
+    #phone {
+        width: 50%;
+        font-size: 2vh;
+        height: 3vh;
+
+
+    }
+
+    .Location {
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 20px;
+
+        >label {
+            font-family: 'Jost';
+            font-size: 2vh;
+            font-weight: 400;
+            line-height: 34.68px;
+        }
+
+        >input {
+
+            width: 60%;
+            height: 3vh;
+            font-size: 2vh;
+
+        }
+    }
+
+    .username {
+        width: 100%;
+
+        font-family: 'Jost';
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        >label {
+            font-size: 2vh;
+        }
+
+        >input {
+            width: 60%;
+            height: 3vh;
+            font-size: 2vh;
+            padding-left: 4px;
+        }
+    }
+}
+
+/*App*/
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+/*index*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+    overflow-x: hidden;
+    width: 100vw;
+
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+#root {
+    width: 100%;
+
+}
+@media  screen and (min-width:1000px) {
+    .deal_card-container{
+        width:40%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap:15px;
+        background-color: rgba(255, 238, 203, 1) ;
+        height:280px;
+        padding:15px 20px;
+        border-radius: 20px;
+    
+        &:hover{
+            transform:scale(1.05);
+            transition:transform 0.2s 100ms cubic-bezier(0.55, 0.085, 0.68, 0.53) ;
+    
+        }
+        
+    }
+    
+    table{
+        width:100%;
+       
+        >tbody{
+            width:100%;
+            height:50px;
+           color: rgba(64, 1, 1, 1);
+    
+        
+            >.head{
+                width:35%;
+                
+                
+                >h3{
+                    
+                    font-size:20px;
+                    line-height: 100%;
+                }
+            }
+            >td{
+                width:5%;
+            }
+            .desc{
+                width:60%;
+                max-width: 60%;
+                overflow-x: auto;
+               
+                
+                >a{
+                    
+                    text-decoration: none;
+                    color:inherit;
+                    >p{
+                        font-weight: 700;
+                        font-size: large;
+                         display:flex;
+                         align-items: center;
+                         gap:10px;
+                    }
+                   } 
+               
+               >p{
+                
+               
+                width:100%;
+                overflow-wrap:anywhere;
+                gap:10px;
+                max-height: 100px;
+                overflow-y: auto;
+                overflow-x: auto;
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
+    
+                
+               }
+               
+            }
+           
+            
+           
+              
+        }
+        
+    }
+    .apply-btn{
+        width:100px;
+      
+        cursor:pointer;
+        font-size: 20px;
+        font-weight: 700;
+        font-family:'Jost';
+        color:rgba(64, 1, 1, 1);
+        background-color: transparent;
+        padding:4px 4px;
+        outline:none;
+         border:2px solid rgba(64, 1, 1, 1);
+         border-radius:10px;
+    
+        &:hover{
+            border:none;
+            background-color: rgb(8, 252, 8);
+            color:rgba(255, 238, 203, 1) ;
+        }
+    
+    
+       }
+       .controls{
+        display:flex;
+        justify-content: flex-end;
+        
+        gap:20px;
+       
+       }
+    
+       #delete{
+        &:hover{
+            border:none;
+            background-color: rgb(247, 12, 12);
+        }
+       }
+    
+}
+
+@media screen and (max-width:400px){
+    .deal_card-container{
+        width:90vw;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap:15px;
+        background-color: rgba(255, 238, 203, 1) ;
+        height:280px;
+        padding:15px 20px;
+        padding-right: 10px;
+        border-radius: 20px;
+        
+        &:hover{
+            transform:scale(1.05);
+            transition:transform 0.2s 100ms cubic-bezier(0.55, 0.085, 0.68, 0.53) ;
+    
+        }
+        
+    }
+    
+    table{
+        width:100%;
+      
+        >tbody{
+            width:100%;
+            
+           color: rgba(64, 1, 1, 1);
+           height:60px;
+    min-height: 50px;
+        
+            >.head{
+                width:35%;
+               
+                
+                >h3{
+                    
+                    font-size:18px;
+                    line-height: 100%;
+                }
+            }
+            >td{
+                width:5%;
+            }
+            .desc{
+                width:60%;
+                max-width: 60%;
+              
+               
+                
+                >a{
+                    
+                    text-decoration: none;
+                    color:inherit;
+                    >p{
+                        font-weight: 700;
+                        font-size: 15px;
+                         display:flex;
+                         align-items: center;
+                         gap:10px;
+                    }
+                   } 
+               
+               >p{
+                
+               
+                width:100%;
+                overflow-wrap:anywhere;
+                gap:10px;
+                max-height: 70px;
+                overflow-y: auto;
+                overflow-x: auto;
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
+    
+                
+               }
+               
+            }
+           
+            
+           
+              
+        }
+        
+    }
+    .apply-btn{
+        width:max-content;
+      
+        cursor:pointer;
+        font-size: 15px;
+        font-weight: 700;
+        font-family:'Jost';
+        color:rgba(64, 1, 1, 1);
+        background-color: transparent;
+        padding:2px 4px;
+        outline:none;
+         border:2px solid rgba(64, 1, 1, 1);
+         border-radius:10px;
+    
+        &:hover{
+            border:none;
+            background-color: rgb(8, 252, 8);
+            color:rgba(255, 238, 203, 1) ;
+        }
+    
+    
+       }
+       .controls{
+        display:flex;
+        justify-content: flex-end;
+        
+        gap:10px;
+       
+       }
+    
+       #delete{
+        &:hover{
+            border:none;
+            background-color: rgb(247, 12, 12);
+        }
+       }
+    
+}
+
+
+
+    
+
+
+@media screen and (min-width:700px) and (max-width:2000px) {
+    .CreateDeal-container {
+        color: rgba(64, 1, 1, 1);
+        background-color: rgba(255, 238, 203, 1);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 50vw;
+        height: 83vh;
+        
+        overflow-y: auto;
+        scrollbar-width:thin;
+        scroll-behavior: smooth;
+        padding: 20px 10px;
+        padding-left: 50px;
+        position: relative;
+        & h3 {
+            font-family: 'Jost';
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 46.24px;
+            text-align: left;
+        }
+        & form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 3vh;
+            >.dealType {
+                display: flex;
+                flex-direction: column;
+                gap:2vh;
+                >.dealType-options {
+                    display: flex;
+                    gap: 40px;
+                    >div {
+                        display: flex;
+                        gap: 5px;
+                    }
+                }
+            }
+            >div {
+            
+                textarea,
+                input {
+                    padding-left: 4px;
+                }
+            }
+            >.contacts {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                flex-wrap: wrap;
+                gap: 6px;
+                >div {
+                    width: 100%;
+                }
+                >.Mobile {
+                    gap: 55px;
+                }
+            }
+            & button {
+                width: 117px;
+                height: 50px;
+                padding: 2px 8px;
+                gap: 10px;
+                border: 0.5px 0px 0px 0px;
+                opacity: 0px;
+                border: 2px solid rgba(64, 1, 1, 1);
+                color: rgba(64, 1, 1, 1);
+                font-family: Jost;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28.9px;
+                text-align: center;
+                background: transparent;
+                align-self: flex-end;
+                margin-bottom: 10px;
+                &:hover {
+                    background-color: rgba(64, 1, 1, 1);
+                    color: #ffeecb;
+                }
+            }
+            >.contacts>div {
+                display: flex;
+                gap: 40px;
+                >div {
+                    display: flex;
+                    flex-direction: column;
+                    >input {
+                        margin-left: 15px;
+                        outline: none;
+                        border: 2px solid #400101;
+                        color: #400101;
+                        font-family: Jost;
+                        font-size: 15px;
+                        font-weight: 500;
+                        line-height: 21.68px;
+                        text-align: left;
+                        background-color: #ffeecb;
+                        padding-left: 4px;
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                    }
+                    >label {
+                        display: flex;
+                        gap: 6px;
+                        font-family: 'Jost';
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 34.68px;
+                    }
+                }
+                >label {
+                    font-family: 'Jost';
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 34.68px;
+                    text-align: left;
+                }
+                >input {
+                    width: 45%;
+                    outline: none;
+                    border: 2px solid #400101;
+                    color: #400101;
+                    font-family: Jost;
+                    padding-left: 4px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 21.68px;
+                    text-align: left;
+                    background-color: #ffeecb;
+                }
+            }
+        }
+        >img {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+        }
+    }
+    #creatorType {
+        position: relative;
+        height:4vh;
+        width:50%;
+    }
+    .username {
+        width: 100%;
+        font-size: 20px;
+        font-family: 'Jost';
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        >label {
+            width: 30%;
+        }
+        >input {
+            padding-left: 4px;
+            width: 100%;
+            height: 40px;
+            font-size: 18px;
+        }
+    }
+    .description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        >textarea {
+            padding-top:5px;
+            font-size: 15px;
+            font-family:'arial'; 
+            min-height: 150px;
+            height: 150px;
+            max-height: 200px;
+            max-width: 100%;
+            min-width: 100%;
+        }
+    }
+    .followers {
+        display: flex;
+        flex-direction: column;
+        gap:1.5vh;
+        >input {
+            height:3.5vh;
+            width: 50%;
+        }
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .mobile,
+    .socialMedia {
+        display: flex;
+        width:100%;
+        justify-content: space-between;
+       
+        >input{
+width:60%;
+        }
+    }
+    .dealType-options{
+        >div{
+            cursor:pointer;
+        }
+    }
+}
+
+@media screen and (min-width:350px) and (max-width:700px) {
+    .CreateDeal-container {
+        color: rgba(64, 1, 1, 1);
+        background-color: rgba(255, 238, 203, 1);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 80vw;
+        height: 95vh;
+        padding: 20px 10px;
+        padding-left: 7vw;
+        position: relative;
+        & h3 {
+            font-family: 'Jost';
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 46.24px;
+            text-align: left;
+        }
+        & form {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            >.contacts {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 0.5vh;
+                >.mobileNo {
+                    font-size: 2vh;
+                }
+            }
+            & button {
+                width: 100px;
+                height: 5vh;
+                padding: 2px 3px;
+                gap: 10px;
+                border: 0.5px 0px 0px 0px;
+                opacity: 0px;
+                border: 2px solid rgba(64, 1, 1, 1);
+                color: rgba(64, 1, 1, 1);
+                font-family: Jost;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 28.9px;
+                text-align: center;
+                background: transparent;
+                position: absolute;
+                bottom: 10px;
+                right: 40px;
+                &:hover {
+                    background-color: rgba(64, 1, 1, 1);
+                    color: #ffeecb;
+                }
+            }
+            >.contacts>div {
+                display: flex;
+                gap: 0.1vh;
+                align-items: center;
+                >div {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 0px;
+                    >input {
+                        margin-left: 15px;
+                        outline: none;
+                        border: 1px solid #400101;
+                        color: #400101;
+                        font-family: Jost;
+                        height: 3vh;
+                        font-size: 2vh;
+                        font-weight: 500;
+                        line-height: 21.68px;
+                        text-align: left;
+                        background-color: #ffeecb;
+                        padding-left: 4px;
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                        width: 90%;
+                    }
+                    >label {
+                        display: flex;
+                        gap: 2vh;
+                        font-family: 'Jost';
+                        font-size: 2vh;
+                        font-weight: 400;
+                        line-height: 34.68px;
+                    }
+                }
+                >label {
+                    font-family: 'Jost';
+                    font-size: 2vh;
+                    font-weight: 400;
+                    line-height: 34.68px;
+                    text-align: left;
+                }
+                >input {
+                    width: 50%;
+                    margin-left: 15px;
+                    outline: none;
+                    border: 1px solid #400101;
+                    color: #400101;
+                    font-family: Jost;
+                    font-size: 2vh;
+                    font-weight: 500;
+                    line-height: 21.68px;
+                    text-align: left;
+                    background-color: #ffeecb;
+                }
+            }
+        }
+        >img {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+        }
+    }
+    .name {
+        width: 45%;
+    }
+    .Type {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        >label {
+            font-family: 'Jost';
+            font-size: 2vh;
+            font-weight: 400;
+            line-height: 34.68px;
+        }
+        >select {
+            width: 60%;
+            height: 3vh;
+            font-size: 2vh;
+        }
+    }
+    #profileImage {
+        display: flex;
+        gap: 10px;
+        >label {
+            font-size: 2vh;
+            line-height: 100%;
+        }
+        >input {
+            height: max-content;
+            width: 50%;
+        }
+    }
+    #phone {
+        width: 50%;
+        font-size: 2vh;
+        height: 3vh;
+    }
+    .Location {
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 20px;
+        >label {
+            font-family: 'Jost';
+            font-size: 2vh;
+            font-weight: 400;
+            line-height: 34.68px;
+        }
+        >input {
+            width: 60%;
+            height: 3vh;
+            font-size: 2vh;
+        }
+    }
+    .username {
+        width: 100%;
+        font-family: 'Jost';
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        >label {
+            font-size: 2vh;
+        }
+        >input {
+            width: 60%;
+            height: 3vh;
+            font-size: 2vh;
+        }
+    }
+   
+}
+
+@media screen and (max-width:350px) {
+
+    .CreateDeal-container {
+        color: rgba(64, 1, 1, 1);
+        background-color: rgba(255, 238, 203, 1);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 90vw;
+        height: 83vh;
+        padding: 20px 10px;
+        padding-left: 3vw;
+       
+        font-size: 2vh;
+        overflow-y: auto;
+        scrollbar-width:thin;
+        scroll-behavior: smooth;
+        & h3 {
+            font-family: 'Jost';
+            font-size: 3vh;
+            font-weight: 500;
+            line-height: 100%;
+            text-align: left;
+        }
+        & form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 4vh;
+            >.dealType {
+                display: flex;
+                flex-direction: column;
+                gap:2vh;
+                >.dealType-options {
+                    display: flex;
+                    gap: 10px;
+                    >div {
+                        display: flex;
+                        gap: 5px;
+                    }
+                }
+            }
+            >.contacts {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 0.5vh;
+                >.mobileNo {
+                    font-size: 2vh;
+                }
+            }
+            & button {
+                width: 100px;
+                height: 5vh;
+                padding: 2px 3px;
+                gap: 10px;
+                border: 0.5px 0px 0px 0px;
+                opacity: 0px;
+                border: 2px solid rgba(64, 1, 1, 1);
+                color: rgba(64, 1, 1, 1);
+                font-family: Jost;
+                font-size: 3vh;
+                font-weight: 500;
+                line-height: 28.9px;
+                text-align: center;
+                align-self: flex-end;
+                background: transparent;
+              
+                margin-bottom: 10px;
+                right: 40px;
+                &:hover {
+                    background-color: rgba(64, 1, 1, 1);
+                    color: #ffeecb;
+                }
+            }
+            >.contacts>div {
+                display: flex;
+                gap: 0.1vh;
+                align-items: center;
+                >div {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 0px;
+                    >input {
+                        margin-left: 15px;
+                        outline: none;
+                        border: 1px solid #400101;
+                        color: #400101;
+                        font-family: Jost;
+                        height: 3vh;
+                        font-size: 2vh;
+                        font-weight: 500;
+                        line-height: 21.68px;
+                        text-align: left;
+                        background-color: #ffeecb;
+                        padding-left: 4px;
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                        width: 90%;
+                    }
+                    >label {
+                        display: flex;
+                        gap: 2vh;
+                        font-family: 'Jost';
+                        font-size: 2vh;
+                        font-weight: 400;
+                        line-height: 34.68px;
+                    }
+                }
+                >label {
+                    font-family: 'Jost';
+                    font-size: 2vh;
+                    font-weight: 400;
+                    line-height: 34.68px;
+                    text-align: left;
+                }
+                >input {
+                    width: 50%;
+                    margin-left: 15px;
+                    outline: none;
+                    border: 1px solid #400101;
+                    color: #400101;
+                    font-family: Jost;
+                    font-size: 2vh;
+                    font-weight: 500;
+                    line-height: 21.68px;
+                    text-align: left;
+                    background-color: #ffeecb;
+                }
+            }
+        }
+        >img {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+        }
+    }
+    .name {
+        width: 45%;
+    }
+    .Type {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        >label {
+            font-family: 'Jost';
+            font-size: 2vh;
+            font-weight: 400;
+            line-height: 34.68px;
+        }
+        >select {
+            width: 60%;
+            height: 3vh;
+            font-size: 2vh;
+        }
+    }
+    .description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        >textarea {
+            padding-top:5px;
+            font-size: 15px;
+            font-family:'arial'; 
+            min-height: 100px;
+            height: 100px;
+            max-height: 25vh;
+            max-width: 100%;
+            min-width: 100%;
+        }
+    }
+    .followers{
+        display: flex;
+        flex-direction: column;
+    }
+    #profileImage {
+        display: flex;
+        gap: 10px;
+        >label {
+            font-size: 2vh;
+            line-height: 100%;
+        }
+        >input {
+            height: max-content;
+            width: 50%;
+        }
+    }
+    .contact{
+        display:flex;
+        flex-direction: column;
+        gap:2vh;
+    .mobile,
+    .socialMedia {
+        display: flex;
+        width:100%;
+        flex-direction: column;
+        justify-content: space-between;
+       
+        >input{
+width:100%;
+        }
+    }
+}
+    #phone {
+        width: 50%;
+        font-size: 2vh;
+        height: 3vh;
+    }
+    .Location {
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 20px;
+        >label {
+            font-family: 'Jost';
+            font-size: 2vh;
+            font-weight: 400;
+            line-height: 34.68px;
+        }
+        >input {
+            width: 60%;
+            height: 3vh;
+            font-size: 2vh;
+        }
+    }
+    .username {
+        width: 100%;
+        font-family: 'Jost';
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 5px;
+        >label {
+            font-size: 2vh;
+        }
+        >input {
+            padding-left: 4px;
+
+            width: 100%;
+            height: 3.5vh;
+            font-size: 2vh;
+        }
+    }
+    .creatorType-input{
+        position:relative;
+    }
+
+    .dealType-options{
+        >div{
+            >p{
+             cursor:pointer;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1000px){
+    .deal_detail-container{
+        width:50vw;
+        display:flex;
+        flex-direction: column;
+     height:max-content ;
+        gap:15px;
+        background-color: rgba(255, 238, 203, 1) ;
+        min-height:60vh;
+        
+       border:1px solid black;
+       
+        &:hover{
+            transform:scale(1.05);
+            transition:transform 0.2s 100ms cubic-bezier(0.55, 0.085, 0.68, 0.53) ;
+    
+        }
+        
+    }
+    .deal_detail-container>table{
+        width:100%;
+      border-collapse: collapse;
+       
+        >tbody{
+            width:100%;
+            
+           color: rgba(64, 1, 1, 1);
+    
+        
+            >.head{
+                border:1px solid rgb(94, 93, 93);
+                width:35%;
+                height:40px;
+                padding-left: 10px;
+                >h3{
+                    
+                    font-size:20px;
+                    line-height: 100%;
+                }
+            }
+            
+            .des{
+                padding-left: 10px;
+               
+                width:60%;
+                border:1px solid rgb(102, 102, 102);
+                
+                >a{
+                    
+                    text-decoration: none;
+                    color:inherit;
+                    >p{
+                        font-weight: 700;
+                        font-size: large;
+                         display:flex;
+                         align-items: center;
+                         gap:10px;
+                    }
+                   } 
+               
+               >p{
+                
+               
+                width:100%;
+                overflow-wrap:anywhere;
+                gap:10px;
+                
+               }
+               
+            }
+           
+            
+           
+              
+        }
+        
+    }
+    .deal_detail-container .apply-btn{
+        width:100px;
+      margin:0 10px 10px 0px;
+        cursor:pointer;
+        font-size: 20px;
+        font-weight: 700;
+        font-family:'Jost';
+        color:rgba(64, 1, 1, 1);
+        background-color: transparent;
+        padding:4px 4px;
+        outline:none;
+         border:2px solid rgba(64, 1, 1, 1);
+         border-radius:10px;
+    
+        &:hover{
+            border:2px solid rgba(255, 238, 203, 1) ;
+            background-color: rgb(8, 252, 8);
+            color:rgba(255, 238, 203, 1) ;
+        }
+    
+    
+       }
+      .deal_detail-container>.controls{
+        display:flex;
+        justify-content:center;
+        margin-top: 30px;
+        gap:20px;
+       }
+    
+      .deal_detail-container> #delete{
+        &:hover{
+            background-color: rgb(247, 12, 12);
+        }
+       }
+       #dealdescription{
+        max-height: 300px;
+        overflow-y:auto;
+       scroll-behavior: smooth;
+       scrollbar-width: thin;
+       }
+    }
+    @media screen and (max-width:400px){
+    
+        .deal_detail-container{
+            width:95vw;
+            display:flex;
+            flex-direction: column;
+         height:max-content;
+            gap:15px;
+            background-color: rgba(255, 238, 203, 1) ;
+            min-height:60vh;
+            
+           border:1px solid black;
+           
+            &:hover{
+                transform:scale(1.05);
+                transition:transform 0.2s 100ms cubic-bezier(0.55, 0.085, 0.68, 0.53) ;
+        
+            }
+            
+        }
+        .deal_detail-container>table{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+       height:max-content;
+          border-collapse: collapse;
+            gap:10px;
+            >tbody{
+                border-bottom: 1px solid black;
+                width:100%;
+                
+               color: rgba(64, 1, 1, 1);
+          display: flex;
+          flex-direction: column;
+          gap:4px;
+          height:max-content;
+            
+                >.head{
+                  
+                    width:100%;
+                    
+                    padding-left: 10px;
+                    >h3{
+                        
+                        font-size:18px;
+                        line-height: 100%;
+                    }
+                }
+                
+                .des{
+                    padding-left: 20px;
+                   height:max-content;
+                    width:100%;
+                  
+                    
+                    >a{
+                        width:100%;
+                        text-decoration: none;
+                        color:inherit;
+                        >p{
+                            width:100%;
+                    overflow-wrap:anywhere;
+                    gap:10px;
+                    max-height: 137px;
+                    
+                    overflow-y:auto;
+                   scroll-behavior: smooth;
+                   scrollbar-width: thin;
+                            font-weight: 700;
+                            font-size: large;
+                             display:flex;
+                             align-items: center;
+                            
+                        }
+                       } 
+                   
+                   >p{
+                    
+                   
+                    width:100%;
+                    overflow-wrap:anywhere;
+                    gap:10px;
+                    max-height: 137px;
+                    
+                    overflow-y:auto;
+                   scroll-behavior: smooth;
+                   scrollbar-width: thin;
+                    
+                   }
+                   
+                }
+               
+                
+               
+                  
+            }
+            
+        }
+        .deal_detail-container .apply-btn{
+            width:100px;
+          margin:0 10px 10px 0px;
+            cursor:pointer;
+            font-size: 20px;
+            font-weight: 700;
+            font-family:'Jost';
+            color:rgba(64, 1, 1, 1);
+            background-color: transparent;
+            padding:4px 4px;
+            outline:none;
+             border:2px solid rgba(64, 1, 1, 1);
+             border-radius:10px;
+        
+            &:hover{
+                border:2px solid rgba(255, 238, 203, 1) ;
+                background-color: rgb(8, 252, 8);
+                color:rgba(255, 238, 203, 1) ;
+            }
+        
+        
+           }
+          .deal_detail-container>.controls{
+            display:flex;
+            justify-content:center;
+            margin-top: 30px;
+            gap:20px;
+           }
+        
+          .deal_detail-container> #delete{
+            &:hover{
+                background-color: rgb(247, 12, 12);
+            }
+           }
+       
+    
+    
+    
+    }
+
+    *{
+        box-sizing: border-box;
+        
+        }
+        
+        .deals-container{
+            width:100%;
+            min-height:60.5vh;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        }
+        
+        .deals-main{
+            width:90%;
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
+           column-gap:40px;
+           row-gap: 20px;
+        
+        }
+        
+        .post-btn{
+            outline:none;
+            height:40px;
+            width:150px;
+            font-size: 25px;
+            font-family: 'Jost';
+            font-weight: 700;
+            background-color:rgba(255, 238, 203, 1) ;
+            cursor:pointer;
+            border:none;
+            border-radius:50px;
+            position:relative;
+            box-shadow:10px 10px 5px solid rgba(255, 238, 203, 1) ;
+            >p{
+                position:absolute;
+                top:5px;
+                left:10px;
+                z-index: 20;
+            }
+           
+            
+        
+            
+        }
+        
+        .post-btn::after{
+            content:'';
+            width:0;
+            height:100%;
+            position:absolute;
+            top:0;
+            right:0;
+            z-index:1;
+            background-color:rgba(64, 1, 1, 1); 
+            border-radius: 50px;
+        }
+        
+        .post-btn:hover p{
+           
+        
+                color: rgba(255, 238, 203, 1) ;
+                 transition:all 500ms 0s linear;
+               
+            
+        }
+        .post-btn:hover::after{
+           
+        
+           width:100%;
+             transition:all 400ms 0s ease;
+           
+        
+        }
+

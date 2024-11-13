@@ -1,0 +1,119 @@
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+  letter-spacing: 1px;
+}
+.creator{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.highest{
+  color: #400101;
+      display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.platform{
+  margin-top: -10px;
+  font-size:xx-small;
+}
+.follower{
+  color: #400101;
+  font-size: 50px;
+  margin-top: -10px;
+}
+.creator-card {
+  width: 390px;
+  height: 400px;
+  background-color: white;
+  border-radius: 0.51rem;
+  overflow: hidden;
+  color: #fff;
+  /* font-family: 'Arial', sans-serif; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 42px;
+  /* align-items: center; */
+  
+}
+
+.creator-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+border-top-right-radius: 0.5rem; 
+}
+
+.creator-info {
+  text-align:left;
+  margin-left: 16px;
+  margin-top: 16px;
+  margin-right: 16px;
+}
+
+.creator-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #400101;
+}
+
+.total-followers {
+  font-size: 14px;
+  font-weight:500;
+  margin: 10px 0;
+  color: #111111;
+}
+
+.creator-bio {
+  font-size: 0.9rem;
+  color: #b3b3b3;
+  margin-bottom: 16px;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    
+}
+.social-icons {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.688rem;
+  color: #a3a3a3;
+  /* margin-bottom: 16px; */
+}
+
+.social-icons a {
+  color: #400101;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #2b0000;
+}
+
+.contact-btn {
+  font-size: 0.75rem;
+  padding: 8px 40px;
+  color: #FFEECB;
+  background-color: #400101;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+ 
+}
+
+.contact-btn:hover {
+  background-color: #2b0000;
+}
+

@@ -1,0 +1,255 @@
+@media screen and (min-width:1000px){
+.deal_detail-container{
+    width:50vw;
+    display:flex;
+    flex-direction: column;
+ height:max-content ;
+    gap:15px;
+    background-color: rgba(255, 238, 203, 1) ;
+    min-height:60vh;
+    
+   border:1px solid black;
+   
+    &:hover{
+        transform:scale(1.05);
+        transition:transform 0.2s 100ms cubic-bezier(0.55, 0.085, 0.68, 0.53) ;
+
+    }
+    
+}
+.deal_detail-container>table{
+    width:100%;
+  border-collapse: collapse;
+   
+    >tbody{
+        width:100%;
+        
+       color: rgba(64, 1, 1, 1);
+
+    
+        >.head{
+            border:1px solid rgb(94, 93, 93);
+            width:35%;
+            height:40px;
+            padding-left: 10px;
+            >h3{
+                
+                font-size:20px;
+                line-height: 100%;
+            }
+        }
+        
+        .des{
+            padding-left: 10px;
+           
+            width:60%;
+            border:1px solid rgb(102, 102, 102);
+            
+            >a{
+                
+                text-decoration: none;
+                color:inherit;
+                >p{
+                    font-weight: 700;
+                    font-size: large;
+                     display:flex;
+                     align-items: center;
+                     gap:10px;
+                }
+               } 
+           
+           >p{
+            
+           
+            width:100%;
+            overflow-wrap:anywhere;
+            gap:10px;
+            
+           }
+           
+        }
+       
+        
+       
+          
+    }
+    
+}
+.deal_detail-container .apply-btn{
+    width:100px;
+  margin:0 10px 10px 0px;
+    cursor:pointer;
+    font-size: 20px;
+    font-weight: 700;
+    font-family:'Jost';
+    color:rgba(64, 1, 1, 1);
+    background-color: transparent;
+    padding:4px 4px;
+    outline:none;
+     border:2px solid rgba(64, 1, 1, 1);
+     border-radius:10px;
+
+    &:hover{
+        border:2px solid rgba(255, 238, 203, 1) ;
+        background-color: rgb(8, 252, 8);
+        color:rgba(255, 238, 203, 1) ;
+    }
+
+
+   }
+  .deal_detail-container>.controls{
+    display:flex;
+    justify-content:center;
+    margin-top: 30px;
+    gap:20px;
+   }
+
+  .deal_detail-container> #delete{
+    &:hover{
+        background-color: rgb(247, 12, 12);
+    }
+   }
+   #dealdescription{
+    max-height: 300px;
+    overflow-y:auto;
+   scroll-behavior: smooth;
+   scrollbar-width: thin;
+   }
+}
+@media screen and (max-width:400px){
+
+    .deal_detail-container{
+        width:95vw;
+        display:flex;
+        flex-direction: column;
+     height:max-content;
+        gap:15px;
+        background-color: rgba(255, 238, 203, 1) ;
+        min-height:60vh;
+        
+       border:1px solid black;
+       
+        &:hover{
+            transform:scale(1.05);
+            transition:transform 0.2s 100ms cubic-bezier(0.55, 0.085, 0.68, 0.53) ;
+    
+        }
+        
+    }
+    .deal_detail-container>table{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+   height:max-content;
+      border-collapse: collapse;
+        gap:10px;
+        >tbody{
+            border-bottom: 1px solid black;
+            width:100%;
+            
+           color: rgba(64, 1, 1, 1);
+      display: flex;
+      flex-direction: column;
+      gap:4px;
+      height:max-content;
+        
+            >.head{
+              
+                width:100%;
+                
+                padding-left: 10px;
+                >h3{
+                    
+                    font-size:18px;
+                    line-height: 100%;
+                }
+            }
+            
+            .des{
+                padding-left: 20px;
+               height:max-content;
+                width:100%;
+              
+                
+                >a{
+                    width:100%;
+                    text-decoration: none;
+                    color:inherit;
+                    >p{
+                        width:100%;
+                overflow-wrap:anywhere;
+                gap:10px;
+                max-height: 137px;
+                
+                overflow-y:auto;
+               scroll-behavior: smooth;
+               scrollbar-width: thin;
+                        font-weight: 700;
+                        font-size: large;
+                         display:flex;
+                         align-items: center;
+                        
+                    }
+                   } 
+               
+               >p{
+                
+               
+                width:100%;
+                overflow-wrap:anywhere;
+                gap:10px;
+                max-height: 137px;
+                
+                overflow-y:auto;
+               scroll-behavior: smooth;
+               scrollbar-width: thin;
+                
+               }
+               
+            }
+           
+            
+           
+              
+        }
+        
+    }
+    .deal_detail-container .apply-btn{
+        width:100px;
+      margin:0 10px 10px 0px;
+        cursor:pointer;
+        font-size: 20px;
+        font-weight: 700;
+        font-family:'Jost';
+        color:rgba(64, 1, 1, 1);
+        background-color: transparent;
+        padding:4px 4px;
+        outline:none;
+         border:2px solid rgba(64, 1, 1, 1);
+         border-radius:10px;
+    
+        &:hover{
+            border:2px solid rgba(255, 238, 203, 1) ;
+            background-color: rgb(8, 252, 8);
+            color:rgba(255, 238, 203, 1) ;
+        }
+    
+    
+       }
+      .deal_detail-container>.controls{
+        display:flex;
+        justify-content:center;
+        margin-top: 30px;
+        gap:20px;
+       }
+    
+      .deal_detail-container> #delete{
+        &:hover{
+            background-color: rgb(247, 12, 12);
+        }
+       }
+   
+
+
+
+}

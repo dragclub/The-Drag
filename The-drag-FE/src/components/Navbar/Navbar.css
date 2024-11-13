@@ -1,0 +1,136 @@
+
+
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+/* Navbar Container */
+.nav-container {
+    width: 100%;
+    background-color: #1c1826;
+    padding: 20px 5vw;
+    border-bottom: 1px solid #FFEECB; 
+}
+.blurred {
+  filter: blur(8px);
+  
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.nav-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-link {
+    color: #FFF;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: rgba(255, 238, 203, 1);
+    transition: color 0.3s ease;
+}
+
+/* Signup/Login Button */
+.nav-btn {
+    background-color: white;
+    color: #1c1826;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    column-gap: 0.5rem;
+    margin-left: 0.25rem; /* 4px */
+    margin-right: 0.25rem; /* 4px */
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 238, 203, 1);
+    transition: background-color 0.3s ease;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  background-color: #111111;
+  color: #fff;
+  overflow: hidden;
+  transition: left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  z-index: 100;
+  display: none;
+}
+
+.sidebar.open {
+  left: 0; 
+}
+
+
+.hamburger-icon {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  color: #FFF;
+  
+}
+.hamburger-link{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 6px
+}
+.hamburger-link:hover{
+    text-decoration: underline;
+}
+.hamburger-links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hamburger-icon {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+ .nav-link{
+    display:none;
+ }
+ .nav-icons-list{
+    display: none;
+ }
+ .sidebar{
+    display: block;
+ }
+}

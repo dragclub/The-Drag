@@ -1,0 +1,38 @@
+{
+  "name": "the_drag",
+  "version": "0.1.0",
+  "homepage": "http://localhost:3000/",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "lodash": "^4.17.21",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-easy-crop": "^5.1.0",
+    "react-icons": "^5.3.0",
+    "react-router-dom": "^6.25.1",
+    "react-scripts": "^4.0.3",
+    "reactjs-popup": "^2.0.6"
+  },
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

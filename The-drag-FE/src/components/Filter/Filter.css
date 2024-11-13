@@ -1,0 +1,248 @@
+*{
+    --w:100vw;
+    --h:100vh;
+    font-family: 'poppins';
+}
+.warning {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+.close1{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    background-color: #fafafa;
+    cursor: pointer;
+    font-size: xx-large;
+}
+@media screen and (min-width:800px){
+    .filter-popup{
+        color:rgba(64, 1, 1, 1);
+        background-color: #FAFAFA ;
+        display:flex;
+        flex-direction: column;
+        gap:30px;
+        
+        
+        padding-top:41px;
+        padding-bottom: 41px;
+        padding-left: 38px;
+        padding-right: 38px;
+    position:relative;
+    border-radius: 15px;
+    
+    }
+    .filter-popup>h3{
+        
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 46.24px;
+    text-align: left;
+    }
+    .filter-form{
+        display:flex;
+        flex-direction: column;
+        gap:24px;
+        width:90%;
+        & button{
+        width:117px;
+        height:48px;
+        
+        gap: 10px;
+        border: 0.5px 0px 0px 0px;
+        opacity: 0px;
+        border: 2px solid rgba(64, 1, 1, 1);
+        color:rgba(64, 1, 1, 1);
+        font-family: Jost;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28.9px;
+        text-align: center;
+        background: transparent;
+        border-radius: 10px;
+        &:hover{
+            background-color: rgba(64, 1, 1, 1);
+            color:rgba(255, 238, 203, 1) ;
+        }
+        }
+    }
+    .filter-form>div>label{
+        
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34.68px;
+    text-align: left;
+    
+    }
+    .filter-form>div{
+        display:flex;
+        justify-content: space-between;
+        position: relative;
+        
+    }
+    .filter-form>div{
+        >select{
+        width:55%;
+        outline: none;
+        border: 2px solid rgba(64, 1, 1, 1);
+        color:rgba(64, 1, 1, 1);
+        font-family: "poppins";
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 21.68px;
+        text-align: left;
+        background-color: #FAFAFA ;
+        border-radius: 10px;
+        padding-left:9px;
+        padding-right: px;
+        }
+        >input{
+            width:55%;
+        outline: none;
+        border: 2px solid rgba(64, 1, 1, 1);
+        color:rgba(64, 1, 1, 1);
+        font-family: Jost;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 21.68px;
+        text-align: left;
+        background-color: #FAFAFA ;
+        padding-left:9px;
+        border-radius: 10px;
+        }
+    }
+    .filter-form>div>select>option:hover{
+    background-color:rgba(64, 1, 1, 1) ;
+    color:rgba(255, 238, 203, 1) ;
+    }
+    
+}
+
+@media (max-width:800px){
+    
+    .filter-popup{
+        color:rgba(64, 1, 1, 1);
+        background-color: #FAFAFA ;
+        display:flex;
+        flex-direction: column;
+        gap:20px;
+        
+       border-radius: 15px;
+        padding-top:5px;
+        padding-bottom: 15px;
+        align-items: center;
+        
+    position:relative;
+    
+    }
+    .filter-popup>h3{
+        
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: left;
+    }
+    .filter-form{
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        width:70%;
+        
+
+        & button{
+            width:80px;
+    height:35px;
+    
+    
+    padding: 5px 12px;
+    
+
+    opacity: 0px;
+    border: 2px solid rgba(64, 1, 1, 1);
+    color:rgba(64, 1, 1, 1);
+    font-family: Jost;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
+    background: transparent;
+    border-radius: 10px;
+   
+     &:hover{
+        background-color: rgba(64, 1, 1, 1);
+        color:rgba(255, 238, 203, 1) ;
+     }
+        }
+    }
+    .filter-form>div>label{
+        
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: left;
+    
+    }
+    .filter-form>div{
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        width:100%;
+        position: relative;
+       overflow: hidden;
+        
+    }
+    .filter-form>div{
+        >select{
+       position: relative;
+    width: 100%;
+    max-width: 100%;
+    outline: none;
+    border: 1px solid rgba(64, 1, 1, 1);
+    color: rgba(64, 1, 1, 1);
+    font-family: Jost;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: left;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+
+    }
+    >input{
+        width:100%;
+        outline: none;
+        border: 1px solid rgba(64, 1, 1, 1);
+        color:rgba(64, 1, 1, 1);
+        font-family: Jost;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: left;
+    background-color: #FAFAFA ;
+    padding-left: 2px;
+    border-radius: 10px;
+    }
+    .filter-form > div > select > option {
+    max-width: 10%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.type-option {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+   
+}
+ 
+
+    
+}

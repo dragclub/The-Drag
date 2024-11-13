@@ -1,0 +1,135 @@
+.form-container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #b5885b;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  color: #5a2b1c;
+  text-align: center;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.reg-form{
+
+}
+.top-form{
+    display: flex;
+    flex: row;
+}
+.top-left-form{
+    width: 40%;
+}
+.dropdown{
+    
+}
+.form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-group div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.form-group div input{
+    width: 80%;
+}
+.form-group label {
+  margin-bottom: 5px;
+  margin-right: auto;
+}
+.hide{
+    display: none;
+}
+.preview{
+    aspect-ratio: 13/8;
+    width: 260px;
+    height: 160px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 5px;
+  border: 1px solid #b5885b;
+  border-radius: 4px;
+}
+
+.profile-picture-section {
+  flex: 1 1 100%;
+  margin-top: 10px;
+}
+
+.crop-container {
+  position: relative;
+  width: 390px;
+  height: 280px;
+  margin-top: 10px;
+  background-color: #000000;
+  z-index: 100;
+}
+.crop-container button{
+    position: absolute;
+    bottom: 0px;
+     left: 0px;
+    width: 100%;
+    z-index: 1100;
+    cursor: pointer;
+}
+.close{
+    position: absolute;
+    top:30px;
+    right: 30px;
+    background-color: #fafafa;
+    cursor: pointer;
+    font-size: xx-large;
+
+}
+.cropped-image {
+  max-width: 100%;
+  border: 1px solid #b5885b;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.submit-button {
+  background-color: #b5885b;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media (max-width:600px){
+.top-form{
+    flex-direction: column-reverse;
+}
+.top-left-form{
+    width: 100%;
+}
+.form-container {
+  width: 300px;
+}
+.close{
+  top:2px;
+    right: 2px;
+    font-size: larger;
+    border-radius: 15px;
+}
+}

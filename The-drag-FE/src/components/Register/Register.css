@@ -1,0 +1,627 @@
+@media screen and (min-width:700px) and  (max-width:2000px){
+    .register-container{
+   
+        color:rgba(64, 1, 1, 1);
+        background-color: rgba(255, 238, 203, 1) ;
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        width:600px;
+        height:700px;
+        padding:20px 10px;
+        padding-left:50px;
+        position: relative;
+        & h3{
+            font-family: 'Jost';
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 46.24px;
+            text-align: left;
+        }
+        & form{
+            width:100%;
+            display:flex;
+            flex-wrap: wrap;
+            gap:24px;
+           
+    
+            >.contacts{
+                display: flex;
+                flex-direction: column;
+               width:100%;
+    flex-wrap: wrap;
+                gap:6px;
+                >div{
+                    width:100%;
+                    
+    
+                }
+                >.Mobile{
+                    gap:55px;
+                }
+            }
+            & button{
+                width:117px;
+        height:48px;
+        
+        
+        padding: 9px 35px 9px 35px;
+        gap: 10px;
+        border: 0.5px 0px 0px 0px;
+        opacity: 0px;
+        border: 2px solid rgba(64, 1, 1, 1);
+        color:rgba(64, 1, 1, 1);
+        font-family: Jost;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28.9px;
+        text-align: center;
+        background: transparent;
+        position:absolute;
+        bottom:10px;
+         right:40px;
+         &:hover{
+            background-color: rgba(64, 1, 1, 1);
+            color:#ffeecb ;
+         }
+            }
+    
+        >.contacts>div{
+            display:flex;
+            gap:40px;
+           
+          >div{
+            display: flex;
+            flex-direction: column;
+            >input{
+               
+                margin-left: 15px;
+                outline: none;
+                border: 2px solid #400101;
+                color:#400101;
+                font-family: Jost;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 21.68px;
+            text-align: left;
+            background-color: #ffeecb ;
+            padding-left: 4px;
+            padding-top:2px;
+            padding-bottom: 2px;
+            }
+            >label{
+          display: flex;
+          gap:6px;
+          font-family: 'Jost';
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 34.68px;
+            }
+          }
+            
+            >label{
+                font-family: 'Jost';
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 34.68px;
+                text-align: left;
+            }
+            >input{
+                width:45%;
+                outline: none;
+                border: 2px solid #400101;
+                color:#400101;
+                font-family: Jost;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 21.68px;
+            text-align: left;
+            background-color: #ffeecb ;
+            }
+        }
+        }
+        >img{
+            position:absolute;
+            top:-20px;
+            right:-20px;
+            
+        }
+    }
+    .name{
+        width:45%;
+    
+    }
+    .Type{
+        width:45%;
+        display: flex;
+        gap:50px;
+        >label{
+            font-family: 'Jost';
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 34.68px;
+        }
+        
+        
+    
+    }
+    
+    #profileImage{
+       display: flex;
+       gap:10px;
+       
+        >input{
+            height:max-content;
+            width:200px;
+        }
+    }
+    #phone{
+        width:200px;
+        
+    }
+    .Location{
+        display:flex;
+        gap:20px;
+        position: relative;
+        >label{
+            font-family: 'Jost';
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 34.68px;
+        }
+        >input{
+            height:40px;
+            width:150px;
+        }
+    }
+    
+    .username{
+        width:100%;
+        font-size:20px;
+        font-family: 'Jost';
+        display:flex;
+        gap:20px;
+        >input{
+            width:60%;
+            height:40px;
+            font-size:18px;
+        }
+    }
+    
+    
+    
+    
+    
+}
+@media screen and (min-width:350px) and  (max-width:700px){
+    .register-container{
+   
+        color:rgba(64, 1, 1, 1);
+        background-color: rgba(255, 238, 203, 1) ;
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        width:80vw;
+        height:95vh;
+        padding:20px 10px;
+        padding-left:7vw;
+        position: relative;
+        & h3{
+            font-family: 'Jost';
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 46.24px;
+            text-align: left;
+        }
+        & form{
+            width:100%;
+            display:flex;
+            flex-wrap: wrap;
+            gap:10px;
+           
+    
+            >.contacts{
+                display: flex;
+                flex-direction: column;
+               width:100%;
+              
+                gap:0.5vh;
+                >.mobileNo{
+font-size: 2vh;
+                }
+
+            }
+            & button{
+                width:100px;
+                height:5vh;
+        
+        
+        padding: 2px 3px;
+        gap: 10px;
+        border: 0.5px 0px 0px 0px;
+        opacity: 0px;
+        border: 2px solid rgba(64, 1, 1, 1);
+        color:rgba(64, 1, 1, 1);
+        font-family: Jost;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28.9px;
+        text-align: center;
+        background: transparent;
+        position:absolute;
+        bottom:10px;
+         right:40px;
+         &:hover{
+            background-color: rgba(64, 1, 1, 1);
+            color:#ffeecb ;
+         }
+            }
+    
+        >.contacts>div{
+            display:flex;
+            
+            gap:0.1vh;
+           align-items: center;
+          >div{
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            gap:0px;
+            >input{
+               
+                margin-left: 15px;
+                outline: none;
+                border: 1px solid #400101;
+                color:#400101;
+                font-family: Jost;
+                height:3vh;
+            font-size: 2vh;
+            font-weight: 500;
+            line-height: 21.68px;
+            text-align: left;
+            background-color: #ffeecb ;
+            padding-left: 4px;
+            padding-top:2px;
+            padding-bottom: 2px;
+            width:90%;
+            }
+            >label{
+          display: flex;
+        gap:2vh;
+          font-family: 'Jost';
+                font-size: 2vh;
+                font-weight: 400;
+                line-height: 34.68px;
+            }
+          }
+            
+            >label{
+                font-family: 'Jost';
+                font-size: 2vh;
+                font-weight: 400;
+                line-height: 34.68px;
+                text-align: left;
+            }
+            >input{
+                width:50%;
+                margin-left: 15px;
+                outline: none;
+                border: 1px solid #400101;
+                color:#400101;
+                font-family: Jost;
+            font-size: 2vh;
+            font-weight: 500;
+            line-height: 21.68px;
+            text-align: left;
+            background-color: #ffeecb ;
+            }
+        }
+        }
+        >img{
+            position:absolute;
+            top:-20px;
+            right:-20px;
+            
+        }
+    }
+    .name{
+        width:45%;
+    
+    }
+    .Type{
+        
+        display: flex;
+        align-items: center;
+        gap:50px;
+        >label{
+            font-family: 'Jost';
+                font-size: 2vh;
+                font-weight: 400;
+                line-height: 34.68px;
+        }
+        >select{
+            
+                width:60%;
+                height:3vh;
+                font-size:2vh;
+            
+        }
+        
+        
+    
+    }
+    
+    #profileImage{
+       display: flex;
+       gap:10px;
+       >label{
+        font-size:2vh;
+        line-height: 100%;
+       }
+       
+        >input{
+            height:max-content;
+            width:50%;
+        }
+    }
+    #phone{
+        width:50%;
+        font-size: 2vh;
+        height:3vh;
+
+        
+    }
+    .Location{
+        display:flex;
+        align-items: center;
+        position: relative;
+        gap:20px;
+        >label{
+            font-family: 'Jost';
+                font-size: 2vh;
+                font-weight: 400;
+                line-height: 34.68px;
+        }
+        >input{
+            
+            width:60%;
+            height:3vh;
+            font-size:2vh;
+        
+    }
+    }
+    
+    .username{
+        width:100%;
+       
+        font-family: 'Jost';
+        display:flex;
+        align-items: center;
+        gap:5px;
+        >label{
+            font-size:2vh;
+        }
+        >input{
+            width:60%;
+            height:3vh;
+            font-size:2vh;
+        }
+    }
+
+   
+}
+@media screen and (max-width:350px){
+    .register-container{
+   
+        color:rgba(64, 1, 1, 1);
+        background-color: rgba(255, 238, 203, 1) ;
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        width:80vw;
+        height:95vh;
+        padding:20px 10px;
+        padding-left:3vw;
+        position: relative;
+        & h3{
+            font-family: 'Jost';
+            font-size: 3vh;
+            font-weight: 500;
+            line-height: 100%;
+            text-align: left;
+        }
+        & form{
+            width:100%;
+            display:flex;
+            flex-wrap: wrap;
+            gap:10px;
+           
+    
+            >.contacts{
+                display: flex;
+                flex-direction: column;
+               width:100%;
+              
+                gap:0.5vh;
+                >.mobileNo{
+font-size: 2vh;
+                }
+
+            }
+            & button{
+                width:100px;
+        height:5vh;
+        
+        
+        padding: 2px 3px;
+        gap: 10px;
+        border: 0.5px 0px 0px 0px;
+        opacity: 0px;
+        border: 2px solid rgba(64, 1, 1, 1);
+        color:rgba(64, 1, 1, 1);
+        font-family: Jost;
+        font-size: 3vh;
+        font-weight: 500;
+        line-height: 28.9px;
+        text-align: center;
+        background: transparent;
+        position:absolute;
+        bottom:10px;
+         right:40px;
+         &:hover{
+            background-color: rgba(64, 1, 1, 1);
+            color:#ffeecb ;
+         }
+            }
+    
+        >.contacts>div{
+            display:flex;
+            
+            gap:0.1vh;
+           align-items: center;
+          >div{
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            gap:0px;
+            >input{
+               
+                margin-left: 15px;
+                outline: none;
+                border: 1px solid #400101;
+                color:#400101;
+                font-family: Jost;
+                height:3vh;
+            font-size: 2vh;
+            font-weight: 500;
+            line-height: 21.68px;
+            text-align: left;
+            background-color: #ffeecb ;
+            padding-left: 4px;
+            padding-top:2px;
+            padding-bottom: 2px;
+            width:90%;
+            }
+            >label{
+          display: flex;
+        gap:2vh;
+          font-family: 'Jost';
+                font-size: 2vh;
+                font-weight: 400;
+                line-height: 34.68px;
+            }
+          }
+            
+            >label{
+                font-family: 'Jost';
+                font-size: 2vh;
+                font-weight: 400;
+                line-height: 34.68px;
+                text-align: left;
+            }
+            >input{
+                width:50%;
+                margin-left: 15px;
+                outline: none;
+                border: 1px solid #400101;
+                color:#400101;
+                font-family: Jost;
+            font-size: 2vh;
+            font-weight: 500;
+            line-height: 21.68px;
+            text-align: left;
+            background-color: #ffeecb ;
+            }
+        }
+        }
+        >img{
+            position:absolute;
+            top:-20px;
+            right:-20px;
+            
+        }
+    }
+    .name{
+        width:45%;
+    
+    }
+    .Type{
+        width:100%;
+        display: flex;
+        align-items: center;
+        gap:50px;
+        >label{
+            font-family: 'Jost';
+                font-size: 2vh;
+                font-weight: 400;
+                line-height: 34.68px;
+        }
+        >select{
+            
+                width:60%;
+                height:3vh;
+                font-size:2vh;
+            
+        }
+        
+        
+    
+    }
+    
+    #profileImage{
+       display: flex;
+       gap:10px;
+       >label{
+        font-size:2vh;
+        line-height: 100%;
+       }
+       
+        >input{
+            height:max-content;
+            width:50%;
+        }
+    }
+    #phone{
+        width:50%;
+        font-size: 2vh;
+        height:3vh;
+
+        
+    }
+    .Location{
+        display:flex;
+        align-items: center;
+        position:relative;
+        gap:20px;
+        >label{
+            font-family: 'Jost';
+                font-size: 2vh;
+                font-weight: 400;
+                line-height: 34.68px;
+        }
+        >input{
+            
+            width:60%;
+            height:3vh;
+            font-size:2vh;
+        
+    }
+    }
+    
+    .username{
+        width:100%;
+       
+        font-family: 'Jost';
+        display:flex;
+        align-items: center;
+        gap:5px;
+        >label{
+            font-size:2vh;
+        }
+        >input{
+            width:60%;
+            height:3vh;
+            font-size:2vh;
+        }
+    }
+}
