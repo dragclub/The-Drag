@@ -56,7 +56,7 @@ export const handleCreatorRegister = async (req, res) => {
     });
 
     // Construct the image URL
-    const image_url = `http://localhost:5000/uploads/${webpFilename}`;
+    const image_url = `https://thedrag.in/apis/uploads/${webpFilename}`;
 
     const token = req.cookies["accessToken"];
     const data = jwt.verify(token, process.env.SECRET_KEY);
@@ -172,7 +172,7 @@ export const handleCreatorEdit = async (req, res) => {
       });
 
       // Construct the image URL
-      image = `http://localhost:5000/uploads/${webpFilename}`;
+      image = `https://thedrag.in/apis/uploads/${webpFilename}`;
     }
 
   
