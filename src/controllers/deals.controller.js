@@ -141,7 +141,7 @@ export const getDeals = async (req, res) => {
   try {
     const { dealType, page = 1, limit = 10, companyName } = req.query;
     const query = { approved: "true" };
-    if(!dealType || !companyName) return res.staus(400).json({message:"Invalid data"});
+    
 
     // Add dealType filter if provided
     if (dealType) {
