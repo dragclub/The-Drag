@@ -148,6 +148,7 @@ export const getalldata = async (req, res) => {
       currentPage: page,
       totalPages,
       totalDocuments,
+      
     });
   } catch (error) {
     console.error("Error fetching data:", error);
