@@ -192,7 +192,7 @@ export const handleCreatorEdit = async (req, res) => {
         socialMedia: {
           insta: {
             url: (insta.length===0)?exist.socialMedia.insta.url:insta ,
-            count:  (instacount .length>0)?Number(instacount):0
+            count:  (instacount.length>0)?Number(instacount):0
           },
           twitter: {
             url: twitter ,
