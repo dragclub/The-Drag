@@ -1,24 +1,47 @@
 import User from "../models/user.model.js";
 import Creator from '../models/creator.model.js'
-
-
+import otpGenerator from 'otp-generator'
 import jwt from 'jsonwebtoken'
 import dotenv from 'dotenv'
 import nodemailer from 'nodemailer'
+import OTP from "../models/OTP.js";
+import { contactEmailTemplate } from "../emailTemplate/contactTemplate.js";
+
 
 dotenv.config();
 
 export const createUser = async (req, res) => {
 
-  const { name, email, password ,isChecked} = req.body;
+  const { name, email, password ,isChecked,otp} = req.body;
 
-  if (!name || !email || !password) return res.status(403).json({ error: "Incomplete fields", success: false });
+  if (!name || !email || !password || !otp) return res.status(403).json({ message: "Incomplete fields", success: false });
   const existingUser = await User.find({ email });
 
   if (existingUser.length > 0) {
-    return res.status(403).json({ success: false, error: "User with same E-mail already exists" });
+    return res.status(403).json({ success: false, message: "User with same E-mail already exists" });
   }
+  const recentOtp = await OTP.find({ email }).sort({ createdAt: -1 }).limit(1);
+  console.log(recentOtp);
 
+  //validate otp
+  if (recentOtp.length === 0) {
+    //otp not found
+    console.log("hlo1")
+    return res.status(400).json({
+      success: false,
+      message: "otp not found",
+    });
+  }
+  //###### check ######## array
+  else if (otp !== recentOtp[0].otp) {
+    //invalid otp
+      console.log("hlo2");
+    return res.status(400).json({
+      success: false,
+      message: "invalid otp",
+    });
+  }
+    console.log("hlo3");
   const newUser = await User.create({
     name: name,
     email: email,
@@ -31,7 +54,7 @@ export const createUser = async (req, res) => {
     brand:isChecked
   }
   console.log(newUser);
-  if (!newUser) return res.status(500).json({ error: "Error occured while creating user", success: false });
+  if (!newUser) return res.status(500).json({ message: "Error occured while creating user", success: false });
   const token = jwt.sign(data, process.env.SECRET_KEY);
   const options = {
     httpOnly: true,
@@ -80,7 +103,7 @@ export const userLogin = async (req, res) => {
     const options = {
       httpOnly: true,
       secure: true,
-path:'/',
+      path:'/',
       maxAge: 7 * 24 * 60 * 60 * 1000,
       sameSite: 'Lax'
 
@@ -101,9 +124,6 @@ path:'/',
     return res.status(500).json("Internal server error");
   }
 }
-
-
-
 
 export const getalldata = async (req, res) => {
   try {
@@ -128,6 +148,12 @@ export const getalldata = async (req, res) => {
           },
         },
       },
+      {
+        $project: {
+          Mobile_No: 0, 
+        },
+      },
+
       {
         $sort: { totalCount: -1 },
       },
@@ -154,7 +180,6 @@ export const getalldata = async (req, res) => {
     return res.status(500).json({ message: "Server Error" });
   }
 };
-
 
 export const logout = (req, res) => {
   if (req.cookies && req.cookies["accessToken"]) {
@@ -219,9 +244,6 @@ export const handlesearch = async (req, res) => {
     pageSize: limit,
   });
 };
-
-
-
 
 
 // export const handleContact = async (req, res) => {
@@ -292,7 +314,7 @@ export const handleContact = async (req, res) => {
       to: req.body.creatormail,
       cc: user.email,
       subject: req.body.subject,
-      text: req.body.body,
+      html: contactEmailTemplate(req.body.subject, req.body.body),
       attachments: req.file
         ? [{ filename: req.file.filename, path: req.file.path }]
         : undefined,
@@ -307,3 +329,64 @@ export const handleContact = async (req, res) => {
     return res.status(500).json({ success: false, error: error.toString() });
   }
 };
+// send otp
+export const sendOTP = async (req,res)=>{
+
+    try{
+        const {email}= req.body;
+
+    //check if user exist 
+        const checkUserPresent = await User.findOne({email});
+
+        if(checkUserPresent){
+            return res.status(401).json({
+                success:false,
+                message:'user already exist'
+            })
+
+        }
+
+        //generate otp
+        var otp = otpGenerator.generate(6,{
+            upperCaseAlphabets:false,
+            lowerCaseAlphabets:false,
+            specialChars:false,
+        })
+        console.log("OTP generated ", otp);
+
+        //check unique otp or not 
+        let result = await OTP.findOne({otp:otp});
+
+        while(result){
+            otp = otpGenerator.generate(6,{
+                upperCaseAlphabets:false,
+                lowerCaseAlphabets:false,
+                specialChars:false,
+            });
+         result = await OTP.findOne({otp:otp});
+        }
+
+        const otpPayload = {email,otp};
+        //create  an entry for otp
+        const otpBody = await OTP.create(otpPayload);
+        console.log("otpbody",otpBody);
+
+        //return respose sucessful
+        res.status(200).json({
+            success:true,
+            message:"OTP sent successfully",
+            //otp,
+        })
+        
+    }
+    catch(error){
+        console.log(error)
+        return res.status(500).json({
+            success:false,
+            message:error.message,
+        })
+
+    }
+    
+}
+
