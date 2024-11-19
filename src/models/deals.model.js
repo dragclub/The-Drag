@@ -27,7 +27,6 @@ const dealSchema = new mongoose.Schema({
     },
     mobile: {
         type: String,
-        required: true
     },
     socialMedia: {
         type: String,

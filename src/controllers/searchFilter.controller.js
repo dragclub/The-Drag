@@ -30,7 +30,12 @@ export const handlesearch = async (req, res) => {
           },
         },
       },
-      { $sort: { socialMediaCount: -1 } }, 
+      {
+        $project: {
+          Mobile_No: 0,
+        },
+      },
+      { $sort: { socialMediaCount: -1 } },
       { $skip: (page - 1) * limit },
       { $limit: limit },
     ]);
@@ -156,7 +161,7 @@ export const handleSearchAndFilter = async (req, res) => {
       { $match: query },
       {
         $addFields: {
-           socialMediaCount: platform 
+          socialMediaCount: platform
             ? `$socialMedia.${platform}.count`
             : {
                 $sum: [
@@ -166,7 +171,12 @@ export const handleSearchAndFilter = async (req, res) => {
                   "$socialMedia.linkedin.count",
                   "$socialMedia.youtube.count",
                 ],
-              }
+              },
+        },
+      },
+      {
+        $project: {
+          Mobile_No: 0,
         },
       },
       { $sort: { socialMediaCount: sort === "asc" ? 1 : -1 } },

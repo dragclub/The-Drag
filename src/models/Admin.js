@@ -1,6 +1,6 @@
-import mongoose, {Schema} from 'mongoose';
+import mongoose, { Schema } from "mongoose";
 
-const userSchema = new Schema({
+const adminSchema = new Schema({
   name: {
     type: String,
     required: true,
@@ -17,9 +17,9 @@ const userSchema = new Schema({
     required: true,
     trim: true,
   },
-  brand: {
-    type: Boolean,
-    default: false,
+  role:{
+    type:String,
+    default:'pending'
   },
   token: {
     type: String,
@@ -29,6 +29,6 @@ const userSchema = new Schema({
   },
 });
 
-const User = mongoose.model('User',userSchema);
+const Admin = mongoose.model("Admin", adminSchema);
 
-export default User;
+export default Admin;
