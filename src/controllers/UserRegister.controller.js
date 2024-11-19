@@ -183,38 +183,54 @@ export const handleCreatorEdit = async (req, res) => {
   
       const exist = await Creator.findOne({ email: data.email });
   
-      const updated={
-        type: (type.trim()!=='')?type:exist.type ,
-        userName:(userName.trim()!=='')?userName:exist.userName,
-        location: (location.trim()!=='')?location:exist.location ,
-        Mobile_No: (phone!=='')?phone:exist.Mobile_No ,
-        image:  (image===null)?exist.image:image ,
+      const updated = {
+        type: type.trim() !== "" ? type : exist.type,
+        userName: userName.trim() !== "" ? userName : exist.userName,
+        location: location.trim() !== "" ? location : exist.location,
+        Mobile_No: phone !== "" ? phone : exist.Mobile_No,
+        image: image === null ? exist.image : image,
         socialMedia: {
           insta: {
-            url: (insta.length===0)?exist.socialMedia.insta.url:insta ,
-            count:  (instacount.length>0)?Number(instacount):0
+            url: insta.length === 0 ? exist.socialMedia.insta.url : insta,
+            count:
+              instacount.length > 0
+                ? Number(instacount)
+                : exist.socialMedia.insta.count,
           },
           twitter: {
-            url: twitter ,
-            count: (twittercount.length>0 )?Number(twittercount):0,
+            url: twitter.length === 0 ? exist.socialMedia.twitter.url : twitter,
+            count:
+              twittercount.length > 0
+                ? Number(twittercount)
+                : exist.socialMedia.twitter.count,
           },
           linkedin: {
-            url: linkedin ,
-            count: ( linkedincount.length>0)?Number(linkedincount):0 ,
+            url:
+              linkedin.length === 0 ? exist.socialMedia.linkedin.url : linkedin,
+            count:
+              linkedincount.length > 0
+                ? Number(linkedincount)
+                : exist.socialMedia.linkedin.count,
           },
           facebook: {
-            url:  facebook ,
-            count:( facebookcount.length>0)?Number(facebookcount):0 ,
+            url:
+              facebook.length === 0 ? exist.socialMedia.facebook.url : facebook,
+            count:
+              facebookcount.length > 0
+                ? Number(facebookcount)
+                : exist.socialMedia.facebook.count,
           },
           youtube: {
-            url:youtube ,
-            count:  (youtubecount.length>0)?Number(youtubecount):0,
-          }
+            url: youtube.length === 0 ? exist.socialMedia.youtube.url : youtube,
+            count:
+              youtubecount.length > 0
+                ? Number(youtubecount)
+                : exist.socialMedia.youtube.count,
+          },
         },
-        mainPlatform:[],
-        count:0
-      
-      }
+        mainPlatform: [],
+        count: 0,
+      };
       let MainPlatform=[];
     let MaxCount=Math.max(updated.socialMedia.insta.count,updated.socialMedia.linkedin.count,updated.socialMedia.twitter.count,updated.socialMedia.facebook.count,updated.socialMedia.youtube.count);
     let totalfollowers=updated.socialMedia.insta.count+updated.socialMedia.linkedin.count+updated.socialMedia.twitter.count+updated.socialMedia.facebook.count+updated.socialMedia.youtube.count;
