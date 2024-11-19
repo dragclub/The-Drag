@@ -36,7 +36,10 @@ const fileFilter = (req, file, cb) => {
 };
 
 // Initialize multer
+
 const upload = multer({ storage, fileFilter });
+
+
 
 router.route('/login').post(userLogin);
 
