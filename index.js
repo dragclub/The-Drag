@@ -19,7 +19,12 @@ app.use(cookieParser());
 app.use(express.urlencoded({extended:false}));
 app.use(
   cors({
-    origin:'*',
+    origin: [
+      "http://localhost:4173",
+      "https://thedrag.in/",
+      "https://thedrag.in/admin/",
+      "http://207.180.208.112:8000",
+    ],
     credentials: true,
   })
 );

@@ -34,7 +34,7 @@ export const resetPasswordToken = async (req, res) => {
     );
     console.log("updateDetails", updateDetails);
     //create url
-    const url = `http://localhost:3000/update-password/${token}`;
+    const url = `https://thedrag.in/update-password/${token}`;
     //send email containing the url
     await mailSender(
       email,
