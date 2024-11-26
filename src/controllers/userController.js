@@ -6,7 +6,7 @@ import dotenv from 'dotenv'
 import nodemailer from 'nodemailer'
 import OTP from "../models/OTP.js";
 import { contactEmailTemplate } from "../emailTemplate/contactTemplate.js";
-
+import bcrypt from "bcrypt"; 
 
 dotenv.config();
 
@@ -42,10 +42,11 @@ export const createUser = async (req, res) => {
     });
   }
     console.log("hlo3");
+    const hashedPassword = await bcrypt.hash(password, 10);
   const newUser = await User.create({
     name: name,
     email: email,
-    password: password,
+    password: hashedPassword,
     brand: isChecked,
   });
   const data = {
@@ -81,8 +82,10 @@ export const userLogin = async (req, res) => {
     const { email, password } = req.body;
     if (!email || !password) return res.status(403).json({ success: false, error: "Complete all the fields" });
 
-    const user = await User.findOne({ email, password });
+    const user = await User.findOne({ email });
+
     if (!user) return res.status(404).json({ success: false, error: "User not found! Go to Signup " });
+    if (!bcrypt.compareSync(password, user.password))return res.status(404).json({ success: false, error: "Incorrect Password!" });
     const data = {
       name: user.name,
       email: email,

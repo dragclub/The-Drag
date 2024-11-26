@@ -86,12 +86,13 @@ export const resetPassword = async (req, res) => {
       });
     }
     //hash password
-   // const hashedPassword = await bcrypt.hash(password, 10);
+   const hashedPassword = await bcrypt.hash(password, 10);
     //update password
+    
     const updateUserDetails = await User.findOneAndUpdate(
       { token: token },
       {
-        password: password,
+        password: hashedPassword,
       },
       { new: true }
     );

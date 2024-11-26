@@ -24,6 +24,7 @@ app.use(
       "https://thedrag.in/",
       "https://thedrag.in/admin/",
       "http://207.180.208.112:8000",
+      "http://localhost:3000",
     ],
     credentials: true,
   })

@@ -44,14 +44,14 @@ export const adminSignup = async (req, res) => {
     return res
       .status(403)
       .json({ message: "Incomplete fields", success: false });
-  const existingAdmin = await Admin.find({ email });
+  // const existingAdmin = await Admin.find({ email });
 
-  if (existingAdmin.length > 0) {
-    return res.status(403).json({
-      success: false,
-      message: "User with same E-mail already exists",
-    });
-  }
+  // if (existingAdmin.length > 0) {
+  //   return res.status(403).json({
+  //     success: false,
+  //     message: "User with same E-mail already exists",
+  //   });
+  // }
   const hashedPassword = await bcrypt.hash(password, 10);
   const newUser = await Admin.create({
     name: name,
