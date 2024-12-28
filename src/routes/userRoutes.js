@@ -5,7 +5,7 @@ import { handleCreatorRegister,handleCreatorEdit } from '../controllers/UserRegi
 import { senderdata } from '../controllers/senderdata.controller.js';
 import multer from 'multer';
 import path from 'path'
-import { createDeal, deleteDeal ,getDeals} from '../controllers/deals.controller.js';
+import { createDeal, deleteDeal ,getDealById,getDeals} from '../controllers/deals.controller.js';
 import { auth } from '../controllers/auth.controller.js';
 import fs from "fs"
 import { resetPassword, resetPasswordToken } from '../controllers/resetPassword.js';
@@ -52,6 +52,7 @@ router.route('/filter').post(filters);
 router.route('/edit').post(auth,upload.single('profileImage'),handleCreatorEdit);
 router.route('/contact').post(auth,upload.single('attachment'),handleContact);
 router.route('/deals').post(auth,createDeal).delete(auth,deleteDeal).get(getDeals);
+router.route("/deals/:id").get(getDealById);
 router.route("/searchandfilter").post(handleSearchAndFilter);
 router.route("/sendotp").post(sendOTP);
 router.route("/reset-password-token").post(resetPasswordToken);

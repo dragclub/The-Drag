@@ -71,7 +71,7 @@ export const resetPasswordEmail = (resetUrl) => {
               <div class="body">
                   <p>We received a request to reset your password. Click the button below to proceed:</p>
                   <a class="button" href="${resetUrl}">Reset Password</a>
-                  <p>If you did not request a password reset, you can safely ignore this email. The link will expire in <span class='highlight'>5 minutes</span>.</p>
+                  <p>If you did not request a password reset, you can safely ignore this email. The link will expire in <span class='highlight'>10 minutes</span>.</p>
               </div>
               <div class="support">If you need assistance, please contact us at <a
                       href="mailto:info@thedrag.in">info@thedrag.in</a>.</div>

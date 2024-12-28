@@ -178,6 +178,43 @@ export const getDeals = async (req, res) => {
   }
 };
 
+export const getDealById = async (req, res) => {
+  try {
+    // Extract the deal ID from request parameters
+    const { id } = req.params;
+
+    // Validate the ID format (optional, depending on your DB)
+    if (!id.match(/^[0-9a-fA-F]{24}$/)) {
+      return res.status(400).json({
+        success: false,
+        message: "Invalid deal ID format",
+      });
+    }
+
+    // Fetch the deal from the database
+    const deal = await deals.findById(id);
+
+    // Check if the deal exists
+    if (!deal) {
+      return res.status(404).json({
+        success: false,
+        message: "Deal not found",
+      });
+    }
+
+    // Return the deal data
+    res.status(200).json({
+      success: true,
+      data: deal,
+    });
+  } catch (error) {
+    console.error("Error fetching deal:", error);
+    res.status(500).json({
+      success: false,
+      message: "An error occurred while fetching the deal",
+    });
+  }
+};
 
 // export const getDeals = async (req, res) => {
 //     try {
